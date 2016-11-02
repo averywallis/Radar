@@ -52,6 +52,7 @@ class sonar(Sprite):
     def step(self):
         self.x += 1
         self.x = self.x
+        self.y = self.y
         
 class OceanDepth(App):
     def __init__(self, width, height):
