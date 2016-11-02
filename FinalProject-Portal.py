@@ -43,7 +43,7 @@ play = 0
 
 
 class Sonar(Sprite):
-    asset = RectangleAsset(5,5)
+    asset = RectangleAsset(5,5,thickline,full)
     def __init__(self, position):
         super().__init__(Sonar.asset, position)
         self.x=0
