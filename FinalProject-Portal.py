@@ -47,16 +47,19 @@ class Sonar(Sprite):
     asset = RectangleAsset(5,5,thickline,darkblue)
     def __init__(self, position):
         super().__init__(Sonar.asset, position)
-        self.x=100
+        self.x=10
         self.y=10
     def step(self):
-        x=x
+        for x in range(0,10):
+            x += 1
+
 class OceanDepth(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         Sonar((random.randint(0,100),random.randint(0,100)))
     def step(self):
-        x=x
+        for Sonar in self.getSpritesbyClass(Sonar):
+            Sonar.step()
             
 myapp = OceanDepth(1000,750)
 myapp.run()
