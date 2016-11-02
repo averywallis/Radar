@@ -4,6 +4,7 @@ COMAOPPractice.py
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
 from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
 import time
+import random
 
 # colors
 red = Color(0xff0000, 1.0)
@@ -53,7 +54,7 @@ class Sonar(Sprite):
 class OceanDepth(App):
     def __init__(self, width, height):
         super().__init__(width, height)
-        Sonar((0,0))
+        Sonar(((random0,0))
     def step(self):
         x=x
             
