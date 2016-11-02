@@ -43,7 +43,7 @@ play = 0
 
 
 class Sonar(Sprite):
-    asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
+    asset = RectangleAsset(5,5)
     def __init__(self, position):
         super().__init__(Sonar.asset, position)
         self.x=0
