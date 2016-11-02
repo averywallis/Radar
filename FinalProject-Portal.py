@@ -50,12 +50,12 @@ class Sonar(Sprite):
         self.y=0
     def step(self):
         x=x
-class PortalGame(App):
+class OceanDepth(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         Sonar((0,0))
     def step(self):
         x=x
             
-myapp = PortalGame(1000,750)
+myapp = OceanDepth(1000,750)
 myapp.run()
