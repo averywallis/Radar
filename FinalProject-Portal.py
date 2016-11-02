@@ -50,7 +50,7 @@ class sonar(Sprite):
         self.x = 10
         self.y = 10
     def step(self):
-        self.x += 1
+        self.x += 10
         self.x = self.x
         self.y = self.y
         
