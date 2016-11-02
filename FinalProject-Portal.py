@@ -53,6 +53,7 @@ class Sonar(Sprite):
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
+        Sonar((0,0))
     def step(self):
         x=x
             
