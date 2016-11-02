@@ -47,7 +47,7 @@ class Sonar(Sprite):
     asset = RectangleAsset(5,5,thickline,darkblue)
     def __init__(self, position):
         super().__init__(Sonar.asset, position)
-        self.x=10
+        self.x=1000
         self.y=10
     def step(self):
         x=x
