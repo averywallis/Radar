@@ -41,7 +41,7 @@ class sonar(Sprite):
 class OceanDepth(App):
     def __init__(self, width, height):
         super().__init__(width, height)
-        sonar((10,10))
+        sonar((100,100))
     def step(self):
         for sonar in self.getSpritesbyClass(sonar):
             sonar.step()
