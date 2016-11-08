@@ -28,20 +28,6 @@ noline= LineStyle(0, black)
 portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
-# global variables changed with the classes
-cpx = 0
-cpy = 0
-cox = -100
-coy = -100
-cbx = -100
-cby = -100
-ccx = 0
-ccy = 0
-hold = 1
-holding = 1
-win = 0
-play = 0
-
 
 class sonar(Sprite):
     asset = RectangleAsset(5,5,thickline,darkblue)
