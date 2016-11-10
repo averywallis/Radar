@@ -97,7 +97,7 @@ class start(Sprite):
         self.vy=0
         
 class finish(Sprite):
-    asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,10,10), 1, 'veritcal')
+    asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 2, 'veritcal')
     def __init__(self, position):
         super().__init__(finish.asset, position)
         self.vx=0
