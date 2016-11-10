@@ -49,13 +49,13 @@ class fpro(Sprite):
         self.x += 1
         self.y += 2
         
-class OceanDepth(App):
+class triathlon(App):
     def __init__(self, width, height):
         super().__init__(width, height)
-        sonar((0,0))
+        mpro((0,0))
     def step(self):
-        for thing in self.getSpritesbyClass(sonar):
+        for thing in self.getSpritesbyClass(mpro):
             thing.step()
             
-myapp = OceanDepth(1000,750)
+myapp = triathlon(1000,750)
 myapp.run()
