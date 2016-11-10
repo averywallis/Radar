@@ -113,8 +113,7 @@ class fpro(Sprite):
         super().__init__(triathlon.asset, position)
         self.setImage(1)
     def step(self):
-        self.x += 0
-        self.y += 0
+        self.x += 0.06211180124
         
 class mpre(Sprite):
     def __init__(self, position):
