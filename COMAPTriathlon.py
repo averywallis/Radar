@@ -40,7 +40,7 @@ class mpro(Sprite):
         self.y += 2
         
 class fpro(Sprite):
-    asset = RectangleAsset(1,1,thickline,darkblue)
+    asset = RectangleAsset(1,1,thickline,red)
     def __init__(self, position):
         super().__init__(fpro.asset, position)
         self.vx=0
