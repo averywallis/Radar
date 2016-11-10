@@ -419,7 +419,7 @@ class triathlon(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         start = TextAsset(text="Start", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-        Sprite(start,(startpos,800))
+        Sprite(start,(startpos,500))
         mpro((0,0))
         fpro((0,50))
         mpre((0,100))
