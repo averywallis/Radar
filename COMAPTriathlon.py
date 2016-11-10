@@ -30,7 +30,7 @@ portalline2= LineStyle(1, orange)
 
 
 class mpro(Sprite):
-    asset = RectangleAsset(1,1,thickline,darkblue)
+    asset = RectangleAsset(1,1,thickline,red)
     def __init__(self, position):
         super().__init__(mpro.asset, position)
         self.vx=0
