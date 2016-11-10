@@ -22,7 +22,8 @@ darkblue=Color(0x052099,1.0)
 
 # lines
 thinline= LineStyle(1, black)
-thickline= LineStyle(5, red)
+thickliner= LineStyle(5, red)
+thicklineb= LineStyle(5, blue)
 thickishline= LineStyle(2.5, black)
 noline= LineStyle(0, black)
 portalline= LineStyle(1, blue)
@@ -30,7 +31,7 @@ portalline2= LineStyle(1, orange)
 
 
 class mpro(Sprite):
-    asset = RectangleAsset(1,1,thickline,black)
+    asset = RectangleAsset(1,1,thicklineb,black)
     def __init__(self, position):
         super().__init__(mpro.asset, position)
         self.vx=0
@@ -40,7 +41,7 @@ class mpro(Sprite):
         self.y += 2
         
 class fpro(Sprite):
-    asset = RectangleAsset(1,1,thickline,red)
+    asset = RectangleAsset(1,1,thickliner,black)
     def __init__(self, position):
         super().__init__(fpro.asset, position)
         self.vx=0
