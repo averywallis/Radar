@@ -418,6 +418,7 @@ class triathlon(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
         super().__init__(width, height)
+        movetxt = TextAsset(text="Start", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         mpro((0,0))
         fpro((0,50))
         mpre((0,100))
