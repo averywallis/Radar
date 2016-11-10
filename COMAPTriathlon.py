@@ -26,7 +26,7 @@ b = 40
 r = 10
 td = s + b + r
 sb = s + b
-sbr = 1.5 + 40 + 10
+sbr = s + b + r
 startpos = 55
 
 #average swim speeds
