@@ -220,18 +220,34 @@ class fpre(Sprite):
         self.t = time.time()
         self.a = 0
     def step(self):
-        if self.p==1:
+        if self.p == 1:
             self.x += fpres
-            if self.x >= 55+(945/51.5):
+            if self.x >= (945/51.5)*1.5:
+                self.p = 0
+        if self.p == 2:
+            self.x += fpreb
+            if self.x >= (945/51.5)*41.5:
+                self. p = 0
+        if self.p == 4:
+            self.x += fprer
+            if self.x >= (945/51.1)*51.5:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
             self.a = 1
             self.t = time.time()
+        elif self.p == 0 and self.a == 2:
+            self.x += 0
+            self.a = 3
+            self.t= time.time()
+        elif self.p == 0 and self.a == 4:
+            self.x += 0
         if time.time() >= self.t + fpret1 and self.p == 0 and self.a == 1:
                 self.p = 2
-        if self.p == 2:
-            self.x += fpreb
+                self.a = 2
+        if time.time() >= self.t + fpret2 and self.p == 0 and self.a == 3:
+                self.p = 4
+                self.a = 4
 
 class mop(Sprite):
     def __init__(self, position):
