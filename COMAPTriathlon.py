@@ -28,14 +28,14 @@ fops=0.06603081438
 cyls=0.05851755527
 aths=0.0640569395
 #average t1 times
-mprot1=0
-fprot1=0
-mpret1=0
-fpret1=0
-mopt1=0
-fopt1=0
-cylt1=0
-atht1=0
+mprot1=3.266666667
+fprot1=3.633333333
+mpret1=4.4
+fpret1=4.95
+mopt1=8.033333333
+fopt1=10.33333333
+cylt1=8.05
+atht1=11.63333333
 #average bike speeds
 mprob=0.6434316354
 fprob=0.591424347
@@ -46,14 +46,14 @@ fopb=0.4010025063
 cylb=0.4531722054
 athb=0.3670285976
 #average t2 times
-mprot2=0
-fprot2=0
-mpret2=0
-fpret2=0
-mopt2=0
-fopt2=0
-cylt2=0
-atht2=0
+mprot2=0.85
+fprot2=0.9166666667
+mpret2=1.25
+fpret2=1.433333333
+mopt2=3.116666667
+fopt2=3.816666667
+cylt2=3.466666667
+atht2=4.516666667
 #average run speeds
 mpror=0.2830188679
 fpror=0.2609830361
