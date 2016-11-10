@@ -47,15 +47,18 @@ class fpro(Sprite):
         self.vy=0
     def step(self):
         self.x += 1
-        self.y += 2
+        self.y += 1
         
 class triathlon(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         mpro((0,0))
+        fpro((0,0))
     def step(self):
-        for thing in self.getSpritesbyClass(mpro):
-            thing.step()
+        for mp in self.getSpritesbyClass(mpro):
+            mp.step()
+        for fp in self.getSpritesbyClass(fpro):
+            fp.step()
             
 myapp = triathlon(1000,750)
 myapp.run()
