@@ -148,18 +148,32 @@ class fpro(Sprite):
     def step(self):
         if self.p == 1:
             self.x += fpros
-            if self.x >= 55+(945/51.5):
+            if self.x >= (945/51.5)*1.5:
                 self.p = 0
-        if self.p == 0:
-            self.x += 0
+        if self.p == 2:
+            self.x += fprob
+            if self.x >= (945/51.5)*41.5:
+                self. p = 0
+        if self.p == 4:
+            self.x += fpror
+            if self.x >= (945/51.1)*51.5:
+                self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
             self.a = 1
             self.t = time.time()
+        elif self.p == 0 and self.a == 2:
+            self.x += 0
+            self.a = 3
+            self.t= time.time()
+        elif self.p == 0 and self.a == 4:
+            self.x += 0
         if time.time() >= self.t + fprot1 and self.p == 0 and self.a == 1:
                 self.p = 2
-        if self.p == 2:
-            self.x += fprob
+                self.a = 2
+        if time.time() >= self.t + fprot2 and self.p == 0 and self.a == 3:
+                self.p = 4
+                self.a = 4
         
 class mpre(Sprite):
     def __init__(self, position):
