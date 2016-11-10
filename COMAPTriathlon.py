@@ -337,18 +337,34 @@ class cyl(Sprite):
         self.t = time.time()
         self.a = 0
     def step(self):
-        if self.p==1:
+        if self.p == 1:
             self.x += cyls
-            if self.x >= 55+(945/51.5):
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*1.5:
+                self.p = 0
+        if self.p == 2:
+            self.x += cylb
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*41.5:
+                self. p = 0
+        if self.p == 4:
+            self.x += cylr
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*51.5:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
             self.a = 1
             self.t = time.time()
+        elif self.p == 0 and self.a == 2:
+            self.x += 0
+            self.a = 3
+            self.t= time.time()
+        elif self.p == 0 and self.a == 4:
+            self.x += 0
         if time.time() >= self.t + cylt1 and self.p == 0 and self.a == 1:
                 self.p = 2
-        if self.p == 2:
-            self.x += cylb
+                self.a = 2
+        if time.time() >= self.t + cylt2 and self.p == 0 and self.a == 3:
+                self.p = 4
+                self.a = 4
 
 class ath(Sprite):
     def __init__(self, position):
@@ -358,18 +374,34 @@ class ath(Sprite):
         self.t = time.time()
         self.a = 0
     def step(self):
-        if self.p==1:
+        if self.p == 1:
             self.x += aths
-            if self.x >= 55+(945/51.5):
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*1.5:
+                self.p = 0
+        if self.p == 2:
+            self.x += athb
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*41.5:
+                self. p = 0
+        if self.p == 4:
+            self.x += athr
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*51.5:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
             self.a = 1
             self.t = time.time()
+        elif self.p == 0 and self.a == 2:
+            self.x += 0
+            self.a = 3
+            self.t= time.time()
+        elif self.p == 0 and self.a == 4:
+            self.x += 0
         if time.time() >= self.t + atht1 and self.p == 0 and self.a == 1:
                 self.p = 2
-        if self.p == 2:
-            self.x += athb
+                self.a = 2
+        if time.time() >= self.t + atht2 and self.p == 0 and self.a == 3:
+                self.p = 4
+                self.a = 4
         
 class triathlon(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
