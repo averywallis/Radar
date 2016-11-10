@@ -117,12 +117,13 @@ class mpro(Sprite):
             if time.time() >= self.t + mprot1:
                 self.p = 2
         if self.p == 2:
-            self.x += mpror
+            self.x += mprob
 class fpro(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
         self.setImage(1)
         self.p = 1
+        self.t = time.time()
     def step(self):
         if self.p==1:
             self.x += fpros
@@ -130,6 +131,10 @@ class fpro(Sprite):
                 self.p = 0
         if self.p == 0:
             self.x += 0
+            if time.time() >= self.t + fprot1:
+                self.p = 2
+        if self.p = 2:
+            self.x += fprob
         
 class mpre(Sprite):
     def __init__(self, position):
