@@ -166,6 +166,10 @@ class fpre(Sprite):
                 self.p = 0
         if self.p == 0:
             self.x += 0
+            if time.time() >= self.t + fpret1:
+                self.p = 2
+        if self.p == 2:
+            self.x += fpreb
 
 class mop(Sprite):
     def __init__(self, position):
