@@ -107,6 +107,7 @@ class mpro(Sprite):
         self.setImage(0)
         self.p=1
         self.t = time.time()
+        self.a = 0
     def step(self):
         if self.p==1:
             self.x += mpros
@@ -114,7 +115,9 @@ class mpro(Sprite):
                 self.p = 0
         if self.p == 0:
             self.x += 0
-            if time.time() >= self.t + mprot1:
+            self.a = 1
+            self.t = time.time()
+            if time.time() >= self.t + mprot1 and self.a == 1:
                 self.p = 2
         if self.p == 2:
             self.x += mprob
