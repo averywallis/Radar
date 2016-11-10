@@ -123,6 +123,16 @@ class fpro(Sprite):
         self.x += 0
         self.y += 0
         
+class mpre(Sprite):
+    def __init__(self, position):
+        super().__init__(triathlon.asset, position)
+        self.vx=0
+        self.vy=0
+        self.setImage(2)
+    def step(self):
+        self.x += 0
+        self.y += 0
+        
 class triathlon(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
