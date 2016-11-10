@@ -137,5 +137,5 @@ class triathlon(App):
         for fp in self.getSpritesbyClass(fpro):
             fp.step()
             
-myapp = triathlon(1000,750)
+myapp = triathlon(1000,1000)
 myapp.run()
