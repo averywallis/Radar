@@ -125,7 +125,7 @@ class fpro(Sprite):
         self.p = 1
         self.t = time.time()
     def step(self):
-        if self.p==1:
+        if self.p == 1:
             self.x += fpros
             if self.x >= 55+(945/51.5):
                 self.p = 0
