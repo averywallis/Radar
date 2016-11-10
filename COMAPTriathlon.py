@@ -11,6 +11,9 @@ mprestart=int(input("Time male premiere start (in minutes after male pro start)"
 fprestart=int(input("Time female premiere start (in minutes after male pro start)"))
 mopenstart=int(input("Time male open start (in minutes after male pro start)"))
 fopenstart=int(input("Time female open start (in minutes after male pro start)"))
+clystart=int(input("Time Clydsedale start (in minutes after male pro start)"))
+athstart=int(input("Time Athena start (in minutes after male pro start)"))
+
 
 
 # colors
