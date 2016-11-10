@@ -18,9 +18,51 @@ fopenstart=int(input("Time female open start (in minutes after male pro start)")
 clystart=int(input("Time Clydsedale start (in minutes after male pro start)"))
 athstart=int(input("Time Athena start (in minutes after male pro start)"))
 """
-mpros
-
-
+#average swim speeds
+mpros=0
+fpros=0
+mpres=0
+fpres=0
+mos=0
+fos=0
+cyls=0
+aths=0
+#average t1 times
+mprot1=0
+fprot1=0
+mpret1=0
+fpret1=0
+mot1=0
+fot1=0
+cylt1=0
+atht1=0
+#average bike speeds
+mprob=0
+fprob=0
+mpreb=0
+fpreb=0
+mob=0
+fob=0
+cylb=0
+athb=0
+#average t2 times
+mprot2=0
+fprot2=0
+mpret2=0
+fpret2=0
+mot2=0
+fot2=0
+cylt2=0
+atht2=0
+#average run speeds
+mpror=0
+fpror=0
+mprer=0
+fprer=0
+mor=0
+for1=0
+cylr=0
+athr=0
 
 
 # colors
