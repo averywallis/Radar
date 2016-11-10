@@ -159,6 +159,7 @@ class fpre(Sprite):
         super().__init__(triathlon.asset, position)
         self.setImage(3)
         self.p = 1
+        self.t = time.time()
     def step(self):
         if self.p==1:
             self.x += fpres
