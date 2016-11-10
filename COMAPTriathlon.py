@@ -149,6 +149,22 @@ class fop(Sprite):
         self.x += 0
         self.y += 0
         
+class cyl(Sprite):
+    def __init__(self, position):
+        super().__init__(triathlon.asset, position)
+        self.setImage(6)
+    def step(self):
+        self.x += 0
+        self.y += 0
+
+class ath(Sprite):
+    def __init__(self, position):
+        super().__init__(triathlon.asset, position)
+        self.setImage(7)
+    def step(self):
+        self.x += 0
+        self.y += 0
+        
 class triathlon(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
@@ -159,6 +175,8 @@ class triathlon(App):
         fpre((200,200))
         mop((300,300))
         fop((400,400))
+        cyl((500,500))
+        ath((600,600))
         start((100,0))
         finish((999,0))
     def step(self):
