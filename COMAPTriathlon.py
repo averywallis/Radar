@@ -1,5 +1,5 @@
 """
-COMAOPtriathlon.py
+COMAPtriathlon.py
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
 from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
