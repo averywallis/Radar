@@ -98,9 +98,9 @@ class start(Sprite):
         self.setImage(0)
         
 class finish(Sprite):
-    asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
+    asset = RectangleAsset(.5,100.thinline,black)
     def __init__(self, position):
-        super().__init__(triathlon.asset, position)
+        super().__init__(finish.asset, position)
         self.vx=0
         self.vy=0
         self.setImage(1)
