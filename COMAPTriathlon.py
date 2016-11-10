@@ -112,7 +112,7 @@ class finish(Sprite):
         self.vx=0
 
 class line(Sprite):
-    asset = RectangleAsset(.5,500,thinline,black)
+    asset = RectangleAsset(.5,400,thinline,black)
     def __init__(self, position):
         super().__init__(line.asset, position)
         self.vx=0
