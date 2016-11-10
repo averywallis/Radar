@@ -29,10 +29,20 @@ portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
 
-class sonar(Sprite):
-    asset = RectangleAsset(5,5,thickline,darkblue)
+class mpro(Sprite):
+    asset = RectangleAsset(1,1,thickline,darkblue)
     def __init__(self, position):
-        super().__init__(sonar.asset, position)
+        super().__init__(mpro.asset, position)
+        self.vx=0
+        self.vy=0
+    def step(self):
+        self.x += 1
+        self.y += 2
+        
+class fpro(Sprite):
+    asset = RectangleAsset(1,1,thickline,darkblue)
+    def __init__(self, position):
+        super().__init__(fpro.asset, position)
         self.vx=0
         self.vy=0
     def step(self):
