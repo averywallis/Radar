@@ -29,7 +29,7 @@ sb = s + b
 sbr = s + b + r
 startpos = 55
 
-#average swim speeds
+#average swim speeds (km/min)
 mpros=0.114213198
 fpros=0.1156812339
 mpres=0.09
@@ -38,7 +38,7 @@ mops=0.06517016655
 fops=0.06603081438
 cyls=0.05851755527
 aths=0.0640569395
-#average t1 times
+#average t1 times (minutes)
 mprot1=3.266666667
 fprot1=3.633333333
 mpret1=4.4
@@ -47,7 +47,7 @@ mopt1=8.033333333
 fopt1=10.33333333
 cylt1=8.05
 atht1=11.63333333
-#average bike speeds
+#average bike speeds (km/min)
 mprob=0.6434316354
 fprob=0.591424347
 mpreb=0.582807188
@@ -56,7 +56,7 @@ mopb=0.4643064423
 fopb=0.4010025063
 cylb=0.4531722054
 athb=0.3670285976
-#average t2 times
+#average t2 times (minutes)
 mprot2=0.85
 fprot2=0.9166666667
 mpret2=1.25
@@ -65,7 +65,7 @@ mopt2=3.116666667
 fopt2=3.816666667
 cylt2=3.466666667
 atht2=4.516666667
-#average run speeds
+#average run speeds (km/min)
 mpror=0.2830188679
 fpror=0.2609830361
 mprer=0.251572327
