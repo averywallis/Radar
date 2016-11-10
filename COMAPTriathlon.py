@@ -112,14 +112,22 @@ class mpro(Sprite):
             self.x += mpros
             if self.x >= 55+(945/51.5):
                 self.p = 0
+        if self.p == 2:
+            self.x += mprob
+            if self.x >= 55 + (945/51.5) + (945/51.5)*4:
+                self. p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
             self.a = 1
             self.t = time.time()
+        elif self.p == 0 and self.a == 2:
+            self.x += 0
+            self.a = 3
+            self.t= time.time()
         if time.time() >= self.t + mprot1 and self.p == 0 and self.a == 1:
                 self.p = 2
-        if self.p == 2:
-            self.x += mprob
+                self.a = 2
+        
             
 class fpro(Sprite):
     def __init__(self, position):
