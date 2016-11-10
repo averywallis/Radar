@@ -108,7 +108,7 @@ class mpro(Sprite):
         self.t = time.time()
         self.a = 0
     def step(self):
-        if self.p==1:
+        if self.p == 1:
             self.x += mpros
             if self.x >= 55+(945/51.5)*1.5:
                 self.p = 0
@@ -125,6 +125,9 @@ class mpro(Sprite):
             self.a = 3
             self.t= time.time()
         if time.time() >= self.t + mprot1 and self.p == 0 and self.a == 1:
+                self.p = 2
+                self.a = 2
+        if time.time() >= self.t + mprot1 and self.p == 0 and self.a == 3:
                 self.p = 2
                 self.a = 2
         
