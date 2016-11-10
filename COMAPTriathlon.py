@@ -95,6 +95,7 @@ class start(Sprite):
         super().__init__(start.asset, position)
         self.vx=0
         self.vy=0
+        self.setImage(0)
         
 class finish(Sprite):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
@@ -102,6 +103,7 @@ class finish(Sprite):
         super().__init__(finish.asset, position)
         self.vx=0
         self.vy=0
+        self.setImage(1)
 
 
 class mpro(Sprite):
