@@ -7,7 +7,7 @@ import time
 import random
 
 
-sl=(input("Length of swim (in kilometers)"))
+sl=int(input("Length of swim (in kilometers)"))
 bl=int(input("Length of bike (in kilometers)"))
 rl=int(input("Length of run (in kilometers)"))
 
