@@ -6,10 +6,12 @@ from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
 import time
 import random
 
-"""
+
 sl=int(input("Length of swim (in kilometers)"))
 bl=int(input("Length of bike (in kilometers)"))
 rl=int(input("Length of run (in kilometers)"))
+
+"""
 fprostart=int(input("Time female pros start (in minutes after male pro start)"))
 mprestart=int(input("Time male premiere start (in minutes after male pro start)"))
 fprestart=int(input("Time female premiere start (in minutes after male pro start)"))
@@ -118,11 +120,11 @@ class mpro(Sprite):
                 self.p = 0
         if self.p == 2:
             self.x += mprob
-            if self.x >= (945/51.5)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.5)*41.5:
                 self. p = 0
         if self.p == 4:
             self.x += mpror
-            if self.x >= (945/51.1)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.5)*51.5:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
@@ -152,15 +154,15 @@ class fpro(Sprite):
     def step(self):
         if self.p == 1:
             self.x += fpros
-            if self.x >= (945/51.5)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.5)*1.5:
                 self.p = 0
         if self.p == 2:
             self.x += fprob
-            if self.x >= (945/51.5)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.5)*41.5:
                 self. p = 0
         if self.p == 4:
             self.x += fpror
-            if self.x >= (945/51.1)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.5)*51.5:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
@@ -189,15 +191,15 @@ class mpre(Sprite):
     def step(self):
         if self.p == 1:
             self.x += mpres
-            if self.x >= (945/51.5)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.5)*1.5:
                 self.p = 0
         if self.p == 2:
             self.x += mpreb
-            if self.x >= (945/51.5)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.5)*41.5:
                 self. p = 0
         if self.p == 4:
             self.x += mprer
-            if self.x >= (945/51.1)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.1)*51.5:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
@@ -226,15 +228,15 @@ class fpre(Sprite):
     def step(self):
         if self.p == 1:
             self.x += fpres
-            if self.x >= (945/51.5)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.5)*1.5:
                 self.p = 0
         if self.p == 2:
             self.x += fpreb
-            if self.x >= (945/51.5)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.5)*41.5:
                 self. p = 0
         if self.p == 4:
             self.x += fprer
-            if self.x >= (945/51.1)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - 50)/51.5)*51.5:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
