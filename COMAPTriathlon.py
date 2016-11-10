@@ -418,11 +418,11 @@ class triathlon(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
         super().__init__(width, height)
-        start = TextAsset(text="Start", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-        transtobike = TextAsset(text="Transition to Biking", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+        starttxt = TextAsset(text="Start", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+        transtobiketxt = TextAsset(text="Transition to Biking", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
 
         Sprite(start,(startpos-10,500))
-        Sprite(transtobike,(startpos+s,500))
+        Sprite(transtobiketxt,(startpos+s,500))
         mpro((0,0))
         fpro((0,50))
         mpre((0,100))
