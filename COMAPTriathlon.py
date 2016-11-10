@@ -45,6 +45,12 @@ noline= LineStyle(0, black)
 portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
+class start(Sprite):
+    asset = RectangleAsset(1,10,thicklineb,black)
+    def __init__(self, position):
+        super().__init__(mpro.asset, position)
+        self.vx=0
+        self.vy=0
 
 class mpro(Sprite):
     asset = RectangleAsset(1,1,thicklineb,black)
@@ -71,6 +77,7 @@ class triathlon(App):
         super().__init__(width, height)
         mpro((0,0))
         fpro((0,0))
+        start((0,0))
     def step(self):
         for mp in self.getSpritesbyClass(mpro):
             mp.step()
