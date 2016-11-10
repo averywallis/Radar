@@ -19,7 +19,7 @@ clystart=int(input("Time Clydsedale start (in minutes after male pro start)"))
 athstart=int(input("Time Athena start (in minutes after male pro start)"))
 """
 #average swim speeds
-mpros=0,fpros=0
+mpros=0
 fpros=0
 mpres=0
 fpres=0
