@@ -113,8 +113,7 @@ class mpro(Sprite):
                 self.p = 0
         if self.p == 0:
             self.x += 0
-        
-        
+            
 class fpro(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
@@ -132,8 +131,14 @@ class mpre(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
         self.setImage(2)
+        self.p = 1
     def step(self):
-        self.x += mpres
+        if self.p==1:
+            self.x += mpres
+            if self.x >= 55+(945/51.5):
+                self.p = 0
+        if self.p == 0:
+            self.x += 0
 
 class fpre(Sprite):
     def __init__(self, position):
