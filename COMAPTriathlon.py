@@ -170,22 +170,40 @@ class fop(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
         self.setImage(5)
+    self.p = 1
     def step(self):
-        self.x += fops
+        if self.p==1:
+            self.x += fops
+            if self.x >= 55+(945/51.5):
+                self.p = 0
+        if self.p == 0:
+            self.x += 0
         
 class cyl(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
         self.setImage(6)
+    self.p = 1
     def step(self):
-        self.x += cyls
+        if self.p==1:
+            self.x += cyls
+            if self.x >= 55+(945/51.5):
+                self.p = 0
+        if self.p == 0:
+            self.x += 0
 
 class ath(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
         self.setImage(7)
+    self.p = 1
     def step(self):
-        self.x += aths
+        if self.p==1:
+            self.x += aths
+            if self.x >= 55+(945/51.5):
+                self.p = 0
+        if self.p == 0:
+            self.x += 0
         
 class triathlon(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
