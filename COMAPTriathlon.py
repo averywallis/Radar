@@ -176,6 +176,17 @@ class triathlon(App):
             mp.step()
         for fp in self.getSpritesbyClass(fpro):
             fp.step()
-            
+        for mpr in self.getSpritesbyClass(mpre):
+            mpr.step()
+        for fpr in self.getSpritesbyClass(fpre):
+            fpr.step()
+        for mo in self.getSpritesbyClass(mop):
+            mo.step()
+        for fo in self.getSpritesbyClass(fop):
+            fo.step()    
+        for c in self.getSpritesbyClass(cyl):
+            c.step()
+        for a in self.getSpritesbyClass(ath):
+            a.step()    
 myapp = triathlon(1000,1000)
 myapp.run()
