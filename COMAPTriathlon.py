@@ -193,13 +193,21 @@ class mop(Sprite):
         super().__init__(triathlon.asset, position)
         self.setImage(4)
         self.p = 1
+        self.t= time.time()
+        self.a = 0
     def step(self):
         if self.p==1:
             self.x += mops
             if self.x >= 55+(945/51.5):
                 self.p = 0
-        if self.p == 0:
+        if self.p == 0 and self.a == 0:
             self.x += 0
+            self.a = 1
+            self.t = time.time()
+        if time.time() >= self.t + mopt1 and self.p == 0 and self.a == 1:
+                self.p = 2
+        if self.p == 2:
+            self.x += mopb
 
 class fop(Sprite):
     def __init__(self, position):
