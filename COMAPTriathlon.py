@@ -128,7 +128,7 @@ class mpro(Sprite):
             self.x += 0
             self.a = 3
             self.t= time.time()
-        elif self.p == 0 and self.a = 4:
+        elif self.p == 0 and self.a == 4:
             self.x += 0
         if time.time() >= self.t + mprot1 and self.p == 0 and self.a == 1:
                 self.p = 2
