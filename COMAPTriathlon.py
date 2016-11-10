@@ -113,11 +113,11 @@ class mpro(Sprite):
             self.x += mpros
             if self.x >= 55+(945/51.5):
                 self.p = 0
-        if self.p == 0:
+        if self.p == 0 and self.a == 0:
             self.x += 0
             self.a = 1
             self.t = time.time()
-            if time.time() >= self.t + mprot1 and self.a == 1:
+        if time.time() >= self.t + mprot1 and self.p == 0 and self.a = 1:
                 self.p = 2
         if self.p == 2:
             self.x += mprob
