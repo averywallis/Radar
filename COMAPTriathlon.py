@@ -114,7 +114,7 @@ class mpro(Sprite):
     def step(self):
         if self.p == 1:
             self.x += mpros
-            if self.x >= (945/51.5)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - 50) /51.5)*1.5:
                 self.p = 0
         if self.p == 2:
             self.x += mprob
