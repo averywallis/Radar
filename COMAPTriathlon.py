@@ -143,15 +143,15 @@ class mpre(Sprite):
         self.p = 1
         self.t = time.time()
     def step(self):
-        if self.p==1:
+        if self.p == 1:
             self.x += mpres
             if self.x >= 55+(945/51.5):
                 self.p = 0
-        elif self.p == 0:
+        if self.p == 0:
             self.x += 0
-            if time.time >= self.t + mpret1:
+            if time.time() >= self.t + mpret1:
                 self.p = 2
-        elif self.p == 2:
+        if self.p == 2:
             self.x += mpreb
 
 class fpre(Sprite):
