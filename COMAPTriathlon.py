@@ -233,15 +233,15 @@ class fpre(Sprite):
     def step(self):
         if self.p == 1:
             self.x += fpres
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*s:
                 self.p = 0
         if self.p == 2:
             self.x += fpreb
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sb:
                 self. p = 0
         if self.p == 4:
             self.x += fprer
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sbr:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
@@ -270,15 +270,15 @@ class mop(Sprite):
     def step(self):
         if self.p == 1:
             self.x += mops
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*s:
                 self.p = 0
         if self.p == 2:
             self.x += mopb
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sb:
                 self. p = 0
         if self.p == 4:
             self.x += mopr
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sbr:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
@@ -307,15 +307,15 @@ class fop(Sprite):
     def step(self):
         if self.p == 1:
             self.x += fops
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*s:
                 self.p = 0
         if self.p == 2:
             self.x += fopb
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sb:
                 self. p = 0
         if self.p == 4:
             self.x += fopr
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sbr:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
@@ -344,15 +344,15 @@ class cyl(Sprite):
     def step(self):
         if self.p == 1:
             self.x += cyls
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*s:
                 self.p = 0
         if self.p == 2:
             self.x += cylb
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sb:
                 self. p = 0
         if self.p == 4:
             self.x += cylr
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sbr:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
@@ -381,15 +381,15 @@ class ath(Sprite):
     def step(self):
         if self.p == 1:
             self.x += aths
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*s:
                 self.p = 0
         if self.p == 2:
             self.x += athb
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sb:
                 self. p = 0
         if self.p == 4:
             self.x += athr
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sbr:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
