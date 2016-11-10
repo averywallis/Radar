@@ -18,6 +18,9 @@ fopenstart=int(input("Time female open start (in minutes after male pro start)")
 clystart=int(input("Time Clydsedale start (in minutes after male pro start)"))
 athstart=int(input("Time Athena start (in minutes after male pro start)"))
 """
+mpros
+
+
 
 
 # colors
@@ -57,6 +60,7 @@ class finish(Sprite):
         super().__init__(finish.asset, position)
         self.vx=0
         self.vy=0
+
 
 class mpro(Sprite):
     asset = RectangleAsset(1,1,thicklineb,black)
