@@ -122,7 +122,7 @@ class fpro(Sprite):
         self.p = 1
     def step(self):
         if self.p==1:
-            self.x += mpros
+            self.x += fpros
             if self.x >= 55+(945/51.5):
                 self.p = 0
         if self.p == 0:
