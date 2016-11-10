@@ -25,6 +25,8 @@ s = 1.5
 b = 40
 r = 10
 td = s + b + r
+sb = s + b
+sbr = 1.5 + 40 + 10
 startpos = 55
 
 #average swim speeds
@@ -119,15 +121,15 @@ class mpro(Sprite):
     def step(self):
         if self.p == 1:
             self.x += mpros
-            if self.x >= ((SCREEN_WINDOWX - startpos) / td)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos) / td)*s:
                 self.p = 0
         if self.p == 2:
             self.x += mprob
-            if self.x >= ((SCREEN_WINDOWX - startpos) / td)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos) / td)*sb:
                 self. p = 0
         if self.p == 4:
             self.x += mpror
-            if self.x >= ((SCREEN_WINDOWX - startpos) / td)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos) / td)*sbr:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
@@ -157,15 +159,15 @@ class fpro(Sprite):
     def step(self):
         if self.p == 1:
             self.x += fpros
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*s:
                 self.p = 0
         if self.p == 2:
             self.x += fprob
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sb:
                 self. p = 0
         if self.p == 4:
             self.x += fpror
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sbr:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
@@ -194,15 +196,15 @@ class mpre(Sprite):
     def step(self):
         if self.p == 1:
             self.x += mpres
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*1.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*s:
                 self.p = 0
         if self.p == 2:
             self.x += mpreb
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*41.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sb:
                 self. p = 0
         if self.p == 4:
             self.x += mprer
-            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*sbr:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
