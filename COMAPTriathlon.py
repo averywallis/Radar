@@ -133,7 +133,7 @@ class fpro(Sprite):
             self.x += 0
             if time.time() >= self.t + fprot1:
                 self.p = 2
-        if self.p = 2:
+        if self.p == 2:
             self.x += fprob
         
 class mpre(Sprite):
