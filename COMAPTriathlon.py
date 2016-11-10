@@ -64,7 +64,6 @@ fopr=0.124403898
 cylr=0.1401541696
 athr=0.1291433491
 
-
 # colors
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -174,14 +173,17 @@ class fpre(Sprite):
         self.setImage(3)
         self.p = 1
         self.t = time.time()
+        self.a = 0
     def step(self):
         if self.p==1:
             self.x += fpres
             if self.x >= 55+(945/51.5):
                 self.p = 0
-        if self.p == 0:
+        if self.p == 0 and self.a == 0:
             self.x += 0
-            if time.time() >= self.t + fpret1:
+            self.a = 1
+            self.t = time.time()
+        if time.time() >= self.t + fpret1 and self.p == 0 and self.a == 1:
                 self.p = 2
         if self.p == 2:
             self.x += fpreb
