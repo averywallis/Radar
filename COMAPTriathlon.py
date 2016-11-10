@@ -8,6 +8,11 @@ import random
 
 fprostart=int(input("Time female pros start (in minutes after male pro start)"))
 mprestart=int(input("Time male premiere start (in minutes after male pro start)"))
+fprestart=int(input("Time female premiere start (in minutes after male pro start)"))
+mopenstart=int(input("Time male open start (in minutes after male pro start)"))
+fopenstart=int(input("Time female open start (in minutes after male pro start)"))
+
+
 # colors
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
