@@ -100,7 +100,7 @@ class start(Sprite):
 class finish(Sprite):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, position):
-        super().__init__(finish.asset, position)
+        super().__init__(triathlon.asset, position)
         self.vx=0
         self.vy=0
         self.setImage(1)
@@ -129,6 +129,7 @@ class fpro(Sprite):
 class triathlon(App):
     def __init__(self, width, height):
         super().__init__(width, height)
+        asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
         mpro((0,0))
         fpro((0,0))
         start((100,0))
