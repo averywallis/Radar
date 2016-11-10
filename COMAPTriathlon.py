@@ -98,7 +98,7 @@ class start(Sprite):
         self.setImage(0)
         
 class finish(Sprite):
-    asset = RectangleAsset(.5,100.thinline,black)
+    asset = RectangleAsset(.5,100,thinline,black)
     def __init__(self, position):
         super().__init__(finish.asset, position)
         self.vx=0
