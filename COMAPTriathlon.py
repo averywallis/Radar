@@ -115,7 +115,7 @@ class mpro(Sprite):
         
 class fpro(Sprite):
     def __init__(self, position):
-        super().__init__(fpro.asset, position)
+        super().__init__(triathlon.asset, position)
         self.vx=0
         self.vy=0
         self.setImage(1)
