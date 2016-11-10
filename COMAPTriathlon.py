@@ -110,15 +110,15 @@ class mpro(Sprite):
     def step(self):
         if self.p == 1:
             self.x += mpros
-            if self.x >= 55+(945/51.5)*1.5:
+            if self.x >= (945/51.5)*1.5:
                 self.p = 0
         if self.p == 2:
             self.x += mprob
-            if self.x >= 55 + (945/51.5)*41.5:
+            if self.x >= (945/51.5)*41.5:
                 self. p = 0
         if self.p == 4:
             self.x += mpror
-            if self.x >= 55 + (945/51.1)*51.5:
+            if self.x >= (945/51.1)*51.5:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
