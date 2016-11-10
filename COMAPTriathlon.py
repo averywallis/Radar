@@ -114,7 +114,7 @@ class mpro(Sprite):
                 self.p = 0
         if self.p == 2:
             self.x += mprob
-            if self.x >= 55 + (945/51.5) + (945/51.5)*41.5:
+            if self.x >= 55 + (945/51.5)*41.5:
                 self. p = 0
         if self.p == 4:
             self.x += mpror
