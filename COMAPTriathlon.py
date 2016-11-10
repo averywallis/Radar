@@ -19,50 +19,50 @@ clystart=int(input("Time Clydsedale start (in minutes after male pro start)"))
 athstart=int(input("Time Athena start (in minutes after male pro start)"))
 """
 #average swim speeds
-mpros=0
-fpros=0.06211180124
-mpres=0
-fpres=0
-mos=0
-fos=0
-cyls=0
-aths=0
+mpros=0.114213198
+fpros=0.1156812339
+mpres=0.09
+fpres=0.08806262231
+mops=0.06517016655
+fops=0.06603081438
+cyls=0.05851755527
+aths=0.0640569395
 #average t1 times
 mprot1=0
 fprot1=0
 mpret1=0
 fpret1=0
-mot1=0
-fot1=0
+mopt1=0
+fopt1=0
 cylt1=0
 atht1=0
 #average bike speeds
-mprob=0
-fprob=0
-mpreb=0
-fpreb=0
-mob=0
-fob=0
-cylb=0
-athb=0
+mprob=0.6434316354
+fprob=0.591424347
+mpreb=0.582807188
+fpreb=0.5244755245
+mopb=0.4643064423
+fopb=0.4010025063
+cylb=0.4531722054
+athb=0.3670285976
 #average t2 times
 mprot2=0
 fprot2=0
 mpret2=0
 fpret2=0
-mot2=0
-fot2=0
+mopt2=0
+fopt2=0
 cylt2=0
 atht2=0
 #average run speeds
-mpror=0
-fpror=0
-mprer=0
-fprer=0
-mor=0
-for1=0
-cylr=0
-athr=0
+mpror=0.2830188679
+fpror=0.2609830361
+mprer=0.251572327
+fprer=0.2265861027
+mopr=0.1635322976
+fopr=0.124403898
+cylr=0.1401541696
+athr=0.1291433491
 
 
 # colors
@@ -106,7 +106,7 @@ class mpro(Sprite):
         super().__init__(triathlon.asset, position)
         self.setImage(0)
     def step(self):
-        self.x += 0.06517016655
+        self.x += mpros
         
 class fpro(Sprite):
     def __init__(self, position):
@@ -120,48 +120,42 @@ class mpre(Sprite):
         super().__init__(triathlon.asset, position)
         self.setImage(2)
     def step(self):
-        self.x += 0
-        self.y += 0
+        self.x += mpres
 
 class fpre(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
         self.setImage(3)
     def step(self):
-        self.x += 0
-        self.y += 0
+        self.x += fpres
 
 class mop(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
         self.setImage(4)
     def step(self):
-        self.x += 0
-        self.y += 0
+        self.x += mops
 
 class fop(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
         self.setImage(5)
     def step(self):
-        self.x += 0
-        self.y += 0
+        self.x += fops
         
 class cyl(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
         self.setImage(6)
     def step(self):
-        self.x += 0
-        self.y += 0
+        self.x += cyls
 
 class ath(Sprite):
     def __init__(self, position):
         super().__init__(triathlon.asset, position)
         self.setImage(7)
     def step(self):
-        self.x += 0
-        self.y += 0
+        self.x += aths
         
 class triathlon(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
