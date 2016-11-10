@@ -22,7 +22,7 @@ darkblue=Color(0x052099,1.0)
 
 # lines
 thinline= LineStyle(1, black)
-thickline= LineStyle(5, black)
+thickline= LineStyle(5, red)
 thickishline= LineStyle(2.5, black)
 noline= LineStyle(0, black)
 portalline= LineStyle(1, blue)
