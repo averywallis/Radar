@@ -422,7 +422,7 @@ class triathlon(App):
         transtobike = TextAsset(text="Transition to Biking", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
 
         Sprite(start,(startpos-10,500))
-        SPrite(transtobike,(s-10,500))
+        Sprite(transtobike,(s-10,500))
         mpro((0,0))
         fpro((0,50))
         mpre((0,100))
