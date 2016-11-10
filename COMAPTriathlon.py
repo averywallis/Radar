@@ -6,7 +6,8 @@ from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
 import time
 import random
 
-fprostart=int(input("Time female pros start (in minutes)"))
+fprostart=int(input("Time female pros start (in minutes after male pro start)"))
+mprestart=int(input("Time male premiere start (in minutes after male pro start)"))
 # colors
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
