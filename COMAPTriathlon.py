@@ -23,6 +23,7 @@ athstart=int(input("Time Athena start (in minutes after male pro start)"))
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
+racetotal = sl + bl + rl
 
 #average swim speeds
 mpros=0.114213198
