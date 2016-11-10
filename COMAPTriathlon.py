@@ -20,7 +20,7 @@ athstart=int(input("Time Athena start (in minutes after male pro start)"))
 """
 #average swim speeds
 mpros=0
-fpros=0
+fpros=0.06211180124
 mpres=0
 fpres=0
 mos=0
@@ -113,7 +113,7 @@ class fpro(Sprite):
         super().__init__(triathlon.asset, position)
         self.setImage(1)
     def step(self):
-        self.x += 0.06211180124
+        self.x += fpros
         
 class mpre(Sprite):
     def __init__(self, position):
