@@ -420,7 +420,7 @@ class triathlon(App):
         fop((0,250))
         cyl((0,300))
         ath((0,350))
-        start((55,0))
+        start((startpos,0))
         finish((SCREEN_WINDOWX - 1,0))
     def step(self):
         for mp in self.getSpritesbyClass(mpro):
