@@ -162,7 +162,7 @@ class fpro(Sprite):
                 self. p = 0
         if self.p == 4:
             self.x += fpror
-            if self.x >= ((SCREEN_WINDOWX - startpso)/td)*51.5:
+            if self.x >= ((SCREEN_WINDOWX - startpos)/td)*51.5:
                 self.p = 0
         if self.p == 0 and self.a == 0:
             self.x += 0
