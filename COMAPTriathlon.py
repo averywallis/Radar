@@ -50,6 +50,13 @@ class start(Sprite):
         super().__init__(start.asset, position)
         self.vx=0
         self.vy=0
+        
+class finish(Sprite):
+    asset = RectangleAsset(.5,100,thinline,black)
+    def __init__(self, position):
+        super().__init__(finish.asset, position)
+        self.vx=0
+        self.vy=0
 
 class mpro(Sprite):
     asset = RectangleAsset(1,1,thicklineb,black)
@@ -77,6 +84,7 @@ class triathlon(App):
         mpro((0,0))
         fpro((0,0))
         start((100,0))
+        finish((1000,0))
     def step(self):
         for mp in self.getSpritesbyClass(mpro):
             mp.step()
