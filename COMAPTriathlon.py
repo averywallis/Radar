@@ -111,8 +111,8 @@ class mpro(Sprite):
         self.vx=0
         self.vy=0
     def step(self):
-        self.x += 1
-        self.y += 2
+        self.x += 0
+        self.y += 0
         
 class fpro(Sprite):
     asset = RectangleAsset(1,1,thickliner,black)
@@ -121,8 +121,8 @@ class fpro(Sprite):
         self.vx=0
         self.vy=0
     def step(self):
-        self.x += 1
-        self.y += 1
+        self.x += 0
+        self.y += 0
         
 class triathlon(App):
     def __init__(self, width, height):
