@@ -425,7 +425,7 @@ class triathlon(App):
         Sprite(starttxt,(startpos-10,500))
         Sprite(transtobiketxt,((((SCREEN_WINDOWX - startpos)/td)*s+startpos,400)))
         Sprite(transtoruntxt,((((SCREEN_WINDOWX - startpos)/td)*sb+startpos,400)))
-        Sprite(finishtxt,((((SCREEN_WINDOWX - startpos)/td)*sbr+25,500)))
+        Sprite(finishtxt,((((SCREEN_WINDOWX - startpos)/td)*sbr+30,500)))
         mpro((0,0))
         fpro((0,50))
         mpre((0,100))
