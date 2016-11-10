@@ -170,7 +170,7 @@ class triathlon(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         mpro((0,0))
-        fpro((50,0))
+        fpro((0,50))
         mpre((100,100))
         fpre((200,200))
         mop((300,300))
