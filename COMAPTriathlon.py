@@ -76,7 +76,7 @@ class triathlon(App):
         super().__init__(width, height)
         mpro((0,0))
         fpro((0,0))
-        start((0,10))
+        start((0,100))
     def step(self):
         for mp in self.getSpritesbyClass(mpro):
             mp.step()
