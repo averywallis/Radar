@@ -6,12 +6,10 @@ from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
 import time
 import random
 
-
+"""
 sl=int(input("Length of swim (in kilometers)"))
 bl=int(input("Length of bike (in kilometers)"))
 rl=int(input("Length of run (in kilometers)"))
-
-
 fprostart=int(input("Time female pros start (in minutes after male pro start)"))
 mprestart=int(input("Time male premiere start (in minutes after male pro start)"))
 fprestart=int(input("Time female premiere start (in minutes after male pro start)"))
@@ -19,7 +17,7 @@ mopenstart=int(input("Time male open start (in minutes after male pro start)"))
 fopenstart=int(input("Time female open start (in minutes after male pro start)"))
 clystart=int(input("Time Clydsedale start (in minutes after male pro start)"))
 athstart=int(input("Time Athena start (in minutes after male pro start)"))
-
+"""
 
 
 # colors
