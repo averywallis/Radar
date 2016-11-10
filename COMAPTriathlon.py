@@ -431,8 +431,8 @@ class triathlon(App):
         fop((0,250))
         cyl((0,300))
         ath((0,350))
-        line((startpos,0))
-        line((SCREEN_WINDOWX-1,0))
+        start((startpos,0))
+        finish((SCREEN_WINDOWX-1,0))
         line((((SCREEN_WINDOWX - startpos)/td)*s+startpos,0))
         line((((SCREEN_WINDOWX - startpos)/td)*sb+startpos,0))
     def step(self):
