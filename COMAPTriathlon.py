@@ -18,6 +18,10 @@ fopenstart=int(input("Time female open start (in minutes after male pro start)")
 clystart=int(input("Time Clydsedale start (in minutes after male pro start)"))
 athstart=int(input("Time Athena start (in minutes after male pro start)"))
 """
+
+SCREEN_WINDOWX = 1000
+SCREEN_WINDOWY = 1000
+
 #average swim speeds
 mpros=0.114213198
 fpros=0.1156812339
@@ -364,5 +368,5 @@ class triathlon(App):
             c.step()
         for a in self.getSpritesbyClass(ath):
             a.step()    
-myapp = triathlon(1000,1000)
+myapp = triathlon(SCREEN_WINDOWX,SCREEN_WINDOWY)
 myapp.run()
