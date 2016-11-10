@@ -7,7 +7,10 @@ import time
 import random
 
 
-sl=int(input("Length of swim (in meters)"))
+sl=int(input("Length of swim (in kilometers)"))
+bl=int(input("Length of bike (in kilometers)"))
+rl=int(input("Length of run (in kilometers)"))
+
 
 fprostart=int(input("Time female pros start (in minutes after male pro start)"))
 mprestart=int(input("Time male premiere start (in minutes after male pro start)"))
