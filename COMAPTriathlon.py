@@ -140,7 +140,7 @@ class fpro(Sprite):
             self.x += 0
             self.a = 1
             self.t = time.time()
-        if time.time() >= self.t + mprot1 and self.p == 0 and self.a == 1:
+        if time.time() >= self.t + fprot1 and self.p == 0 and self.a == 1:
                 self.p = 2
         if self.p == 2:
             self.x += fprob
