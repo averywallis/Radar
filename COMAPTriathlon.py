@@ -90,7 +90,7 @@ portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
 class start(Sprite):
-    asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,10,10), 1, 'veritcal')
+    asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,50,50), 1, 'veritcal')
     def __init__(self, position):
         super().__init__(start.asset, position)
         self.vx=0
