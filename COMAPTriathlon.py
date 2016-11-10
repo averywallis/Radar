@@ -139,6 +139,7 @@ class triathlon(App):
         super().__init__(width, height)
         mpro((0,0))
         fpro((0,0))
+        mpre((100,100))
         start((100,0))
         finish((999,0))
     def step(self):
