@@ -40,13 +40,13 @@ class dish(Sprite):
     def __init__(self, position):
         super().__init__(dish.asset, position)
         self.vx=0
-        self.rotation=.4
+        self.rotation=.3
         
 class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
         super().__init__(width, height)
-        dish((100,10))
+        dish((100,100))
        
 myapp = radar(SCREEN_WINDOWX,SCREEN_WINDOWY)
 myapp.run()
