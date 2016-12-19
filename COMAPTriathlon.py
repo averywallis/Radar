@@ -38,7 +38,7 @@ portalline2= LineStyle(1, orange)
 class dish(Sprite):
     asset = EllipseAsset(5,5,thinline,1)
     def __init__(self, position):
-        super().__init__(start.asset, position)
+        super().__init__(dish.asset, position)
         self.vx=0
         
 class radar(App):
