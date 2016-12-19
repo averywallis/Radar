@@ -6,19 +6,6 @@ from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
 import time
 import random
 
-"""
-sl=int(input("Length of swim (in kilometers)"))
-bl=int(input("Length of bike (in kilometers)"))
-rl=int(input("Length of run (in kilometers)"))
-fprostart=int(input("Time female pros start (in minutes after male pro start)"))
-mprestart=int(input("Time male premiere start (in minutes after male pro start)"))
-fprestart=int(input("Time female premiere start (in minutes after male pro start)"))
-mopenstart=int(input("Time male open start (in minutes after male pro start)"))
-fopenstart=int(input("Time female open start (in minutes after male pro start)"))
-clystart=int(input("Time Clydsedale start (in minutes after male pro start)"))
-athstart=int(input("Time Athena start (in minutes after male pro start)"))
-"""
-
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
 
@@ -48,18 +35,16 @@ noline= LineStyle(0, black)
 portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
-class start(Sprite):
-    asset = RectangleAsset(.5,500,thinline,black)
+class dish(Sprite):
+    asset = EllipseAsset(
     def __init__(self, position):
         super().__init__(start.asset, position)
         self.vx=0
         
-
-        
-class triathlon(App):
+class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
         super().__init__(width, height)
        
-myapp = triathlon(SCREEN_WINDOWX,SCREEN_WINDOWY)
+myapp = radar(SCREEN_WINDOWX,SCREEN_WINDOWY)
 myapp.run()
