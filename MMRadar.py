@@ -105,7 +105,7 @@ class radar(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         Sprite(RectangleAsset(1000,500,thinlinesb,skyblue),(0,0))
-        fog((100,100))
+        fog((100,0))
         dish((100,450))
         signal((102,450))
         plane((900,100))
