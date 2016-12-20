@@ -54,7 +54,11 @@ class rain(Sprite):
         self.vx=0
         self.vy=0
         self.rotation=-1
-        
+    def step(self):
+        if self.y <= 500:
+            self.y += 1
+        if self.y >= 500:
+            self.y = 100
 class signal(Sprite):
     asset = EllipseAsset(50,5,thinliner,white)
     def __init__(self, position):
