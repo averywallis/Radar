@@ -9,6 +9,7 @@ import math
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
+speed = 1
 
 
 # colors
@@ -55,13 +56,13 @@ class signal(Sprite):
         self.a = 0
     def step(self):
         if self.a == 0:
-            self.x += 3
-            self.y -= 1.5
+            self.x += 3*speed
+            self.y -= 1.5*speed
             if self.x >= 900:
                 self.a = 1
         if self.a == 1:
-            self.x -= 3
-            self.y += 1.5
+            self.x -= 3*speed
+            self.y += 1.5*speed
             if self.x <= 102:
                 self.a = -1
         
