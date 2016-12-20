@@ -65,7 +65,7 @@ class rain(Sprite):
         if self.y >= 500:
             self.y = 0
 class fog(Sprite):
-    asset = RectangleAsset(50,50,thinlinewa,wall)
+    asset = RectangleAsset(500,500,thinlinewa,wall)
     def __init__(self, position):
         super().__init__(fog.asset, position)
         self.vx=0
