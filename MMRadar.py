@@ -49,6 +49,7 @@ class signal(Sprite):
     def __init__(self, position):
         super().__init__(signal.asset, position)
         self.vx=0
+        self.x=0
         self.rotation=-1
     def step(self):
         self.x += 1
