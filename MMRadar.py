@@ -5,6 +5,7 @@ from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, El
 from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
 import time
 import random
+import math
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
@@ -54,7 +55,7 @@ class plane(Sprite):
     def __init__(self, position):
         super().__init__(plane.asset, position)
         self.vx=0
-        self.rotation= 3.14
+        self.rotation= math.pi/2
         
 class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
