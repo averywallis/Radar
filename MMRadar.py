@@ -89,7 +89,7 @@ class signal(Sprite):
             self.x -= 3*speed
             self.y += 1.5*speed
             if self.x <= 102:
-                self.a = -1
+                self.a = 0
         
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
