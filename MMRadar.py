@@ -97,7 +97,7 @@ class radar(App):
         signal((102,450))
         plane((900,100))
         for x in range(0,51):
-            rain((random.randrange(400,800),random.randrange(100,500)))
+            rain((random.randrange(400,800),random.randrange(0,500)))
         Sprite(LineAsset(1000,1,thinline),(0,500))
     def step(self):
         for sig in self.getSpritesbyClass(signal):
