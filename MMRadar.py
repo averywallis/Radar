@@ -64,7 +64,7 @@ class radar(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         dish((100,450))
-        signal((105,450))
+        signal((102,450))
         plane((900,100))
         Sprite(LineAsset(1000,1,thinline),(0,500))
        
