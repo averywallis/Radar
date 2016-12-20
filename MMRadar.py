@@ -53,7 +53,7 @@ class signal(Sprite):
         self.vy=0
         self.rotation=-1
     def step(self):
-        self.x += 1
+        self.x += 3
         self.y -= 1
         
 class plane(Sprite):
