@@ -56,7 +56,7 @@ class rain(Sprite):
         self.rotation=0
     def step(self):
         if self.y <= 500:
-            self.y += 1
+            self.y += 5
         if self.y >= 500:
             self.y = 100
             
