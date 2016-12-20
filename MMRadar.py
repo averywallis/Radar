@@ -27,6 +27,7 @@ darkblue=Color(0x052099,1.0)
 
 # lines
 thinline= LineStyle(1, black)
+thin1line=(LineStyle(2,black)
 thickline= LineStyle(5, black)
 thickliner= LineStyle(5, red)
 thicklineb= LineStyle(5, blue)
@@ -36,7 +37,7 @@ portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
 class dish(Sprite):
-    asset = EllipseAsset(50,5,thinline,white)
+    asset = EllipseAsset(50,5,thin1line,white)
     def __init__(self, position):
         super().__init__(dish.asset, position)
         self.vx=0
