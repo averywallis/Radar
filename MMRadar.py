@@ -53,8 +53,8 @@ class signal(Sprite):
         self.vy=0
         self.rotation=-1
     def step(self):
-        self.x += 3
-        self.y -= 1
+        self.x += 2
+        self.y -= 1.5
         
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
