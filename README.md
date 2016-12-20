@@ -1,1 +1,1 @@
-[Play!](http://runpython.com/?user=averywallis&repo=COMAPtriathlon&name=COMAPTriathlon.py)
+[Play!](http://runpython.com/?user=averywallis&repo=Radar&name=MMRadar.py)
