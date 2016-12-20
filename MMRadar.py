@@ -70,8 +70,8 @@ class radar(App):
         plane((900,100))
         Sprite(LineAsset(1000,1,thinline),(0,500))
     def step(step):
-        for signal1 in self.getSpritesbyClass(signal):
-            signal1.step()
+        for sig in self.getSpritesbyClass(signal):
+            sig.step()
        
 myapp = radar(SCREEN_WINDOWX,SCREEN_WINDOWY)
 myapp.run()
