@@ -49,7 +49,7 @@ class signal(Sprite):
         self.rotation=-0.8
         
 class plane(Sprite):
-    asset = EllipseAsset(50,5,thinline,white)
+    asset = ImageAsset("images/four_spaceship_by_albertov.png", Frame(0,0,205,361), 2, 'horizontal')
     def __init__(self, position):
         super().__init__(dish.asset, position)
         self.vx=0
