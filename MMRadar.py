@@ -45,7 +45,7 @@ portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
 class dish(Sprite):
-    asset = EllipseAsset(50,5,thin1line,white)
+    asset = EllipseAsset(50,5,thin1line,red)
     def __init__(self, position):
         super().__init__(dish.asset, position)
         self.vx=0
