@@ -36,7 +36,7 @@ portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
 class dish(Sprite):
-    asset = ImageAsset("images/Untitled%20drawing%20(1).png",Frame(0,0,100,100),1,"horizontal")
+    asset = ImageAsset("images/Untitled%20drawing%20(1).png",Frame(0,0,500,500),1,"horizontal")
     def __init__(self, position):
         super().__init__(dish.asset, position)
         self.vx=0
