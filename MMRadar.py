@@ -15,6 +15,17 @@ precipitation = 1
 
 # colors
 red = Color(0xff0000, 1.0)
+red9 = Color(0xff0000, 0.9)
+red8 = Color(0xff0000, 0.8)
+red7 = Color(0xff0000, 0.7)
+red6 = Color(0xff0000, 0.6)
+red5 = Color(0xff0000, 0.5)
+red4 = Color(0xff0000, 0.4)
+red3 = Color(0xff0000, 0.3)
+red2 = Color(0xff0000, 0.2)
+red1 = Color(0xff0000, 0.1)
+
+
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 skyblue = Color(0x87CEEB, 1.0)
