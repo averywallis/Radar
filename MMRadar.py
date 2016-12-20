@@ -29,6 +29,7 @@ darkblue=Color(0x052099,1.0)
 # lines
 thinline= LineStyle(1, black)
 thinliner= LineStyle(1, red)
+thinlinedb=LineStyle(1, darkblue)
 thin1line=LineStyle(2,black)
 thickline= LineStyle(5, black)
 thickliner= LineStyle(5, red)
@@ -47,7 +48,7 @@ class dish(Sprite):
         self.rotation=-1
         
 class rain(Sprite):
-    asset = RectangleAsset(20,20,thin1line,darkblue)
+    asset = RectangleAsset(20,20,thinlinedb,darkblue)
     def __init__(self, position):
         super().__init__(rain.asset, position)
         self.vx=0
