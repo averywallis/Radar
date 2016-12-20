@@ -32,7 +32,7 @@ darkblue=Color(0x052099,1.0)
 thinline= LineStyle(1, black)
 thinliner= LineStyle(1, red)
 thinlinedb=LineStyle(1, darkblue)
-thinlinef=LineStyle(1, fog)
+thinlinewa=LineStyle(1, wall)
 thin1line=LineStyle(2,black)
 thickline= LineStyle(5, black)
 thickliner= LineStyle(5, red)
@@ -63,7 +63,7 @@ class rain(Sprite):
         if self.y >= 500:
             self.y = 0
 class fog(Sprite):
-    asset = RectangleAsset(50,50,thinlinef,fog)
+    asset = RectangleAsset(50,50,thinlinewa,wall)
     def __init__(self, position):
         super().__init__(fog.asset, position)
         self.vx=0
