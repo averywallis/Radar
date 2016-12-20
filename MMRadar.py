@@ -100,8 +100,8 @@ class radar(App):
     def step(self):
         for sig in self.getSpritesbyClass(signal):
             sig.step()
-        for rain in self.getSpritesbyClass(rain):
-            rain.step()
+        for rain1 in self.getSpritesbyClass(rain):
+            rain1.step()
        
 myapp = radar(SCREEN_WINDOWX,SCREEN_WINDOWY)
 myapp.run()
