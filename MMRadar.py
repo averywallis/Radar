@@ -27,6 +27,7 @@ darkblue=Color(0x052099,1.0)
 
 # lines
 thinline= LineStyle(1, black)
+thinliner= LineStyle(1, black)
 thin1line=LineStyle(2,black)
 thickline= LineStyle(5, black)
 thickliner= LineStyle(5, red)
@@ -44,7 +45,7 @@ class dish(Sprite):
         self.rotation=-1
         
 class signal(Sprite):
-    asset = EllipseAsset(50,5,thinline,white)
+    asset = EllipseAsset(50,5,thinliner,white)
     def __init__(self, position):
         super().__init__(signal.asset, position)
         self.vx=0
