@@ -45,7 +45,7 @@ class dish(Sprite):
 class signal(Sprite):
     asset = EllipseAsset(50,5,thinline,white)
     def __init__(self, position):
-        super().__init__(dish.asset, position)
+        super().__init__(signal.asset, position)
         self.vx=0
         self.rotation=-0.8
         
