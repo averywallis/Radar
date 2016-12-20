@@ -61,7 +61,7 @@ class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
         super().__init__(width, height)
-        dish((100,500))
+        dish((100,450))
         signal((200,200))
         plane((400,100))
         Sprite(LineAsset(1000,1,thinline),(0,500))
