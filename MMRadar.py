@@ -27,7 +27,7 @@ darkblue=Color(0x052099,1.0)
 
 # lines
 thinline= LineStyle(1, black)
-thinliner= LineStyle(1, black)
+thinliner= LineStyle(1, red)
 thin1line=LineStyle(2,black)
 thickline= LineStyle(5, black)
 thickliner= LineStyle(5, red)
