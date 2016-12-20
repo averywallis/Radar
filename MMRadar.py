@@ -36,11 +36,11 @@ portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
 class dish(Sprite):
-    asset = ImageAsset("images/Untitled%20drawing%20(1).png")
+    asset = EllipseAsset(50,5,thinline,white)
     def __init__(self, position):
         super().__init__(dish.asset, position)
         self.vx=0
-        self.rotation=0
+        self.rotation=-0.8
         
 class signal(Sprite):
     asset = EllipseAsset(50,5,thinline,white)
