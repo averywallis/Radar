@@ -48,7 +48,7 @@ class dish(Sprite):
         self.rotation=-1
         
 class rain(Sprite):
-    asset = RectangleAsset(1,1,thinlinedb,darkblue)
+    asset = RectangleAsset(1,5,thinlinedb,darkblue)
     def __init__(self, position):
         super().__init__(rain.asset, position)
         self.vx=0
