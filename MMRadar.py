@@ -59,7 +59,7 @@ class rain(Sprite):
         if self.y <= 500:
             self.y += 5
         if self.y >= 500:
-            self.y = 100
+            self.y = 0
             
 class signal(Sprite):
     asset = EllipseAsset(50,5,thinliner,white)
