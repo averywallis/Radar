@@ -64,7 +64,7 @@ class radar(App):
         super().__init__(width, height)
         dish((100,450))
         signal((200,200))
-        plane((400,5000))
+        plane((400,500))
         Sprite(LineAsset(1000,1,thinline),(0,500))
        
 myapp = radar(SCREEN_WINDOWX,SCREEN_WINDOWY)
