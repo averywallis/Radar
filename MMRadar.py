@@ -61,7 +61,7 @@ class rain(Sprite):
         self.rotation=0
     def step(self):
         if self.y <= 500:
-            self.y += 5
+            self.y += random.randbetween(2,7)
         if self.y >= 500:
             self.y = 0
 class fog(Sprite):
@@ -90,7 +90,6 @@ class signal(Sprite):
             self.y += 1.5*speed
             if self.x <= 102:
                 self.a = -1
-        
         
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
