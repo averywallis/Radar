@@ -47,7 +47,7 @@ class dish(Sprite):
         self.rotation=-1
         
 class rain(Sprite):
-    asset = RectangleAsset(50,5,thin1line,white)
+    asset = RectangleAsset(2,2,thin1line,darkblue)
     def __init__(self, position):
         super().__init__(rain.asset, position)
         self.vx=0
@@ -90,6 +90,7 @@ class radar(App):
         dish((100,450))
         signal((102,450))
         plane((900,100))
+        rain((100,100))
         Sprite(LineAsset(1000,1,thinline),(0,500))
     def step(self):
         for sig in self.getSpritesbyClass(signal):
