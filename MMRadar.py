@@ -65,7 +65,7 @@ class rain(Sprite):
 class fog(Sprite):
     asset = RectangleAsset(50,50,thinlinef,fog)
     def __init__(self, position):
-        super().__init__(rain.asset, position)
+        super().__init__(fog.asset, position)
         self.vx=0
         self.vy=0
             
@@ -105,6 +105,7 @@ class radar(App):
         dish((100,450))
         signal((102,450))
         plane((900,100))
+        fog((100,100))
         for x in range(0,41):
             rain((random.randrange(400,800),random.randrange(0,500)))
         Sprite(LineAsset(1000,1,thinline),(0,500))
