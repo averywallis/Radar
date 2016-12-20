@@ -51,7 +51,7 @@ class signal(Sprite):
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov.png", Frame(0,0,205,361), 2, 'horizontal')
     def __init__(self, position):
-        super().__init__(dish.asset, position)
+        super().__init__(plane.asset, position)
         self.vx=0
         self.rotation=-0.8
         
