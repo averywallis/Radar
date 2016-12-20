@@ -61,7 +61,7 @@ class rain(Sprite):
         self.rotation=0
     def step(self):
         if self.y <= 500:
-            self.y += random.randbetween(2,7)
+            self.y += random.randrange(2,7)
         if self.y >= 500:
             self.y = 0
 class fog(Sprite):
