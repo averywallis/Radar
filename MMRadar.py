@@ -10,6 +10,7 @@ import math
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
 speed = 2
+precipitation = 1
 
 
 # colors
