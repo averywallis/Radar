@@ -42,6 +42,7 @@ class dish(Sprite):
     def __init__(self, position):
         super().__init__(dish.asset, position)
         self.vx=0
+        self.vy=0
         self.rotation=-1
         
 class signal(Sprite):
@@ -49,6 +50,7 @@ class signal(Sprite):
     def __init__(self, position):
         super().__init__(signal.asset, position)
         self.vx=0
+        self.vy=0
         self.rotation=-1
     def step(self):
         self.x += 1
