@@ -10,7 +10,6 @@ SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
 
 
-
 # colors
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -42,11 +41,27 @@ class dish(Sprite):
         self.vx=0
         self.rotation=-0.8
         
+class signal(Sprite):
+    asset = EllipseAsset(50,5,thinline,white)
+    def __init__(self, position):
+        super().__init__(dish.asset, position)
+        self.vx=0
+        self.rotation=-0.8
+        
+class plane(Sprite):
+    asset = EllipseAsset(50,5,thinline,white)
+    def __init__(self, position):
+        super().__init__(dish.asset, position)
+        self.vx=0
+        self.rotation=-0.8
+        
 class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
         super().__init__(width, height)
         dish((100,100))
+        signal((200,200))
+        plane((400,100))
        
 myapp = radar(SCREEN_WINDOWX,SCREEN_WINDOWY)
 myapp.run()
