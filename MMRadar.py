@@ -50,6 +50,8 @@ class signal(Sprite):
         super().__init__(signal.asset, position)
         self.vx=0
         self.rotation=-1
+    def step(self):
+        
         
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
@@ -67,6 +69,9 @@ class radar(App):
         signal((102,450))
         plane((900,100))
         Sprite(LineAsset(1000,1,thinline),(0,500))
+    def step(step):
+        for signal in self.getSpritesbyClass(signal):
+            signal.step()
        
 myapp = radar(SCREEN_WINDOWX,SCREEN_WINDOWY)
 myapp.run()
