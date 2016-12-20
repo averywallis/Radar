@@ -53,7 +53,7 @@ class rain(Sprite):
         super().__init__(rain.asset, position)
         self.vx=0
         self.vy=0
-        self.rotation=-1
+        self.rotation=0
     def step(self):
         if self.y <= 500:
             self.y += 1
