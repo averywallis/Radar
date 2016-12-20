@@ -46,6 +46,14 @@ class dish(Sprite):
         self.vy=0
         self.rotation=-1
         
+class rain(Sprite):
+    asset = RectangleAsset(50,5,thin1line,white)
+    def __init__(self, position):
+        super().__init__(rain.asset, position)
+        self.vx=0
+        self.vy=0
+        self.rotation=-1
+        
 class signal(Sprite):
     asset = EllipseAsset(50,5,thinliner,white)
     def __init__(self, position):
