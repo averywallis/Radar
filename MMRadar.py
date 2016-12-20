@@ -25,12 +25,14 @@ orange=Color(0xFFa500,1.0)
 platc=Color(0xB9BDBB,1.0)
 gooy=Color(0xCDF238,1.0)
 white=Color(0xFFFFFF,1.0)
+fog=Color(0xFFFFFF,0.1)
 darkblue=Color(0x052099,1.0)
 
 # lines
 thinline= LineStyle(1, black)
 thinliner= LineStyle(1, red)
 thinlinedb=LineStyle(1, darkblue)
+thinlinef=LineStyle(1, fog)
 thin1line=LineStyle(2,black)
 thickline= LineStyle(5, black)
 thickliner= LineStyle(5, red)
@@ -60,6 +62,12 @@ class rain(Sprite):
             self.y += 5
         if self.y >= 500:
             self.y = 0
+class fog(Sprite):
+    asset = RectangleAsset(50,50,thinlinef,fog)
+    def __init__(self, position):
+        super().__init__(rain.asset, position)
+        self.vx=0
+        self.vy=0
             
 class signal(Sprite):
     asset = EllipseAsset(50,5,thinliner,white)
