@@ -62,7 +62,7 @@ class signal(Sprite):
         if self.a == 1:
             self.x -= 3
             self.y += 1.5
-            if self.x <= 101:
+            if self.x <= 102:
                 self.a = -1
         
         
