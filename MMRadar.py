@@ -142,6 +142,7 @@ class radar(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         dishtxt = TextAsset(text="Radar Dish", width = 200, align = 'center', style = '10px Arial', fill=black)
+        suntxt = TextAsset(text="Random Sun", width = 200, align = 'center', style = '10px Arial', fill=black)
         Sprite(RectangleAsset(1000,500,thinlinesb,skyblue),(0,0))
         if foggy == 1:
             fog((200,0))
