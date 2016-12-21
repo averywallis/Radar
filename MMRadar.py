@@ -146,7 +146,7 @@ class radar(App):
         if foggy == 1:
             fog((200,0))
         dish((100,450))
-        Sprite(dishtxt,(50,450))
+        Sprite(dishtxt,(45,450))
         signal((102,450))
         plane((900,100))
         if rainny == 1:
