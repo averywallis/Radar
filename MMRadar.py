@@ -12,6 +12,7 @@ SCREEN_WINDOWY = 1000
 speed = 2
 precipitation = 1
 rain = 1
+fog = 1
 
 
 # colors
@@ -116,7 +117,8 @@ class radar(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         Sprite(RectangleAsset(1000,500,thinlinesb,skyblue),(0,0))
-        fog((200,0))
+        if fog == 1:
+            fog((200,0))
         dish((100,450))
         signal((102,450))
         plane((900,100))
