@@ -124,7 +124,7 @@ class radar(App):
         plane((900,100))
         global rain
         self.rain1 = rain
-        if self.rain == 1:
+        if self.rain1 == 1:
             for x in range(0,31):
                 rain((random.randrange(400,800),random.randrange(0,500)))
         Sprite(LineAsset(1000,1,thinline),(0,500))
