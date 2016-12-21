@@ -11,8 +11,8 @@ SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
 speed = 2
 precipitation = 1
-rainny = 1
-foggy = 0
+rainny = 0
+foggy = 1
 
 
 # colors
