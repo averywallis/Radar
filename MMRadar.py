@@ -12,12 +12,11 @@ if weather == 1:
     rainny = int(input("Rain? (1 for rain, 0 for none)"))
     foggy = int(input("Fog? (1 for fog, 0 for none)"))
     snowy = int(input("Snow? (1 for snow, 0 for none)"))
-    numplanes = int(input("Number of planes in air?"))
 else:
     rainny = 0
     foggy = 0
     snowy = 0
-
+numplanes = int(input("Number of planes in air?"))
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
 speed = 2
