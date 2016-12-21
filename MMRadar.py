@@ -12,7 +12,7 @@ SCREEN_WINDOWY = 1000
 speed = 2
 precipitation = 1
 rainny = 1
-foggy = 1
+foggy = 0
 
 
 # colors
