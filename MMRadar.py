@@ -151,7 +151,7 @@ class radar(App):
         Sprite(dishtxt,(45,450))
         signal((102,450))
         plane((900,100))
-        Sprite(planetxt,(875,25))
+        Sprite(planetxt,(870,25))
         if rainny == 1:
             for x in range(0,31):
                 rain((random.randrange(400,800),random.randrange(0,500)))
