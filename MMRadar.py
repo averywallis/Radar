@@ -7,10 +7,10 @@ import time
 import random
 import math
 
-weather = int(input("Any weather? (1 for custom, anything for none)"))
+weather = int(input("Any weather? (1 for custom, 0 for none)"))
 if weather == 1:
-    rainny = int(input("Rain? (1 for rain, anything for no rain)"))
-    foggy = int(input("Fog? (1 for fog, anything for no fog)"))
+    rainny = int(input("Rain? (1 for rain, 0 for no rain)"))
+    foggy = int(input("Fog? (1 for fog, 0 for no fog)"))
 else:
     rainny = 0
     foggy = 0
