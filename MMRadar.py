@@ -143,6 +143,7 @@ class radar(App):
         super().__init__(width, height)
         dishtxt = TextAsset(text="Radar Dish", width = 200, align = 'center', style = '10px Arial', fill=black)
         suntxt = TextAsset(text="Random Sun", width = 200, align = 'center', style = '10px Arial', fill=black)
+        planetxt = TextAsset(text="Plane (will move eventually)", width = 200, align = 'center', style = '10px Arial', fill=black)
         Sprite(RectangleAsset(1000,500,thinlinesb,skyblue),(0,0))
         if foggy == 1:
             fog((200,0))
@@ -150,6 +151,7 @@ class radar(App):
         Sprite(dishtxt,(45,450))
         signal((102,450))
         plane((900,100))
+        Sprite(planetxt,(900,50))
         if rainny == 1:
             for x in range(0,31):
                 rain((random.randrange(400,800),random.randrange(0,500)))
