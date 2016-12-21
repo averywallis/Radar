@@ -122,6 +122,7 @@ class radar(App):
         dish((100,450))
         signal((102,450))
         plane((900,100))
+        global rain
         if rain == 1:
             for x in range(0,31):
                 rain((random.randrange(400,800),random.randrange(0,500)))
