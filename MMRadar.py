@@ -19,7 +19,7 @@ else:
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
-speed = 3
+speed = 2
 precipitation = 1
 
 
