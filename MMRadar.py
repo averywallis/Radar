@@ -56,6 +56,7 @@ thinliner= LineStyle(1, red)
 thinlinesb=LineStyle(1, skyblue)
 thinlinedb=LineStyle(1, darkblue)
 thinlinewa=LineStyle(1, wall)
+thinlinew= LineStyle(1, white)
 thin1line=LineStyle(2,black)
 thickline= LineStyle(5, black)
 thickliner= LineStyle(5, red)
@@ -85,6 +86,20 @@ class rain(Sprite):
             self.y += random.randrange(2,7)
         if self.y >= 500:
             self.y = 0
+
+class snow(Sprite):
+    asset = RectangleAsset(1,1,thinlinedb,white)
+    def __init__(self, position):
+        super().__init__(snow.asset, position)
+        self.vx=0
+        self.vy=0
+        self.rotation=0
+    def step(self):
+        if self.y <= 500:
+            self.y += random.randrange(2,7)
+        if self.y >= 500:
+            self.y = 0
+            
 class fog(Sprite):
     asset = RectangleAsset(500,500,thinlinewa,wall)
     def __init__(self, position):
@@ -133,6 +148,9 @@ class radar(App):
         if rainny == 1:
             for x in range(0,31):
                 rain((random.randrange(400,800),random.randrange(0,500)))
+        if snowy == 1:
+            for x in range(0,31):
+                snow((random.randrange(400,800),randomt.randrange(0,500)))
         Sprite(LineAsset(1000,1,thinline),(0,500))
     def step(self):
         for sig in self.getSpritesbyClass(signal):
