@@ -8,13 +8,13 @@ import random
 import math
 
 rainny = int(input("Rain? (1 for rain, 0 for no rain)"))
+foggy = int(input("Fog? (1 for fog, 0 for no fog)"))
 
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
 speed = 2
 precipitation = 1
-foggy = 0
 
 
 # colors
