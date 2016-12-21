@@ -145,7 +145,7 @@ class radar(App):
         dishtxt = TextAsset(text="Radar Dish", width = 200, align = 'center', style = '10px Arial', fill=black)
         signaltxt = TextAsset(text="Signal (moving)", width = 200, align = 'center', style = '10px Arial', fill=red)
         suntxt = TextAsset(text="Random Sun", width = 200, align = 'center', style = '10px Arial', fill=black)
-        planetxt = TextAsset(text="Plane (may move eventually)", width = 200, align = 'center', style = '10px Arial', fill=black)
+        planetxt = TextAsset(text="Plane (will idealy move)", width = 200, align = 'center', style = '10px Arial', fill=black)
         Sprite(RectangleAsset(1000,500,thinlinesb,skyblue),(0,0))
         if foggy == 1:
             fog((200,0))
