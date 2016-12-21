@@ -11,7 +11,7 @@ SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
 speed = 2
 precipitation = 1
-rain = 1
+rain1 = 1
 fog = 1
 
 
