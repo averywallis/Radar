@@ -150,13 +150,15 @@ class radar(App):
                 rain((random.randrange(400,800),random.randrange(0,500)))
         if snowy == 1:
             for x in range(0,31):
-                snow((random.randrange(400,800),randomt.randrange(0,500)))
+                snow((random.randrange(400,800),random.randrange(0,500)))
         Sprite(LineAsset(1000,1,thinline),(0,500))
     def step(self):
         for sig in self.getSpritesbyClass(signal):
             sig.step()
         for rain1 in self.getSpritesbyClass(rain):
             rain1.step()
+        for snow1 in self.getSpritesbyClass(snow):
+            snow1.step()
        
 myapp = radar(SCREEN_WINDOWX,SCREEN_WINDOWY)
 myapp.run()
