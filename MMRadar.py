@@ -11,8 +11,8 @@ SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
 speed = 2
 precipitation = 1
-rain1 = 1
-fog = 1
+rainny = 1
+foggy = 1
 
 
 # colors
@@ -117,13 +117,12 @@ class radar(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         Sprite(RectangleAsset(1000,500,thinlinesb,skyblue),(0,0))
-        if fog == 1:
+        if foggy == 1:
             fog((200,0))
         dish((100,450))
         signal((102,450))
         plane((900,100))
-        global rain1
-        if rain1 == 1:
+        if rainny == 1:
             for x in range(0,31):
                 rain((random.randrange(400,800),random.randrange(0,500)))
         Sprite(LineAsset(1000,1,thinline),(0,500))
