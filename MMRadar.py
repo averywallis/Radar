@@ -88,7 +88,7 @@ class rain(Sprite):
             self.y = 0
 
 class snow(Sprite):
-    asset = RectangleAsset(1,1,thinlinedb,white)
+    asset = RectangleAsset(1,1,thinlinedw,white)
     def __init__(self, position):
         super().__init__(snow.asset, position)
         self.vx=0
