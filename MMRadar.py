@@ -7,6 +7,9 @@ import time
 import random
 import math
 
+rainny = int(input("Rain? (1 for rain, 0 for no rain)"))
+
+
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
 speed = 2
