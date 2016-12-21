@@ -15,6 +15,7 @@ if weather == 1:
 else:
     rainny = 0
     foggy = 0
+    snowy = 0
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
