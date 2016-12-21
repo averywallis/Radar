@@ -151,7 +151,7 @@ class radar(App):
         dish((100,450))
         Sprite(dishtxt,(45,450))
         signal((102,450))
-        Sprite(signaltxt,(100,400))
+        Sprite(signaltxt,(75,350))
         plane((900,100))
         Sprite(planetxt,(870,25))
         if rainny == 1:
