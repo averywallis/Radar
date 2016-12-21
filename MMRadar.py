@@ -16,7 +16,8 @@ else:
     rainny = 0
     foggy = 0
     snowy = 0
-numplanes = int(input("Number of planes in air?"))
+numplanes = int(input("Number of planes in air? (for future use)"))
+
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
 speed = 2
