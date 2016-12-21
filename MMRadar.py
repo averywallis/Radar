@@ -158,7 +158,7 @@ class radar(App):
                 snow((random.randrange(400,800),random.randrange(0,500)))
         Sprite(LineAsset(1000,1,thinline),(0,500))
         Sprite(CircleAsset(20,thinlinesun,sun),(200,100))
-        Sprite(suntxt,(175,110))
+        Sprite(suntxt,(175,100))
     def step(self):
         for sig in self.getSpritesbyClass(signal):
             sig.step()
