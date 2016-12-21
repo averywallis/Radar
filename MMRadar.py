@@ -71,14 +71,11 @@ class rain(Sprite):
         self.vx=0
         self.vy=0
         self.rotation=0
-        global rain
-        self.rain = rain
     def step(self):
-        if rain == 1:
-            if self.y <= 500:
-                self.y += random.randrange(2,7)
-            if self.y >= 500:
-                self.y = 0
+        if self.y <= 500:
+            self.y += random.randrange(2,7)
+        if self.y >= 500:
+            self.y = 0
 class fog(Sprite):
     asset = RectangleAsset(500,500,thinlinewa,wall)
     def __init__(self, position):
