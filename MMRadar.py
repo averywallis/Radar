@@ -87,7 +87,7 @@ class fog(Sprite):
         self.vy=0
             
 class signal(Sprite):
-    asset = EllipseAsset(50,5,thinliner,red1)
+    asset = EllipseAsset(50,5,thinliner,red)
     def __init__(self, position):
         super().__init__(signal.asset, position)
         self.vx=0
