@@ -9,7 +9,7 @@ import math
 
 weather = int(input("Any weather? (1 for custom, 0 for none)"))
 if weather == 1:
-    rainny = int(input("Rain? (1 for rain, 0 for no rain)"))
+    rainny = int(str(input("Rain? (1 for rain, 0 for no rain)")))
     foggy = int(input("Fog? (1 for fog, 0 for no fog)"))
 else:
     rainny = 0
