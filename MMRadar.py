@@ -141,6 +141,7 @@ class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
         super().__init__(width, height)
+        dishtxt = TextAsset(text="Radar Dish", width = 200, align = 'center', style = '10px Arial', fill=black)
         Sprite(RectangleAsset(1000,500,thinlinesb,skyblue),(0,0))
         if foggy == 1:
             fog((200,0))
