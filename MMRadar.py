@@ -74,7 +74,7 @@ class rain(Sprite):
         global rain
         self.rain = rain
     def step(self):
-        self.rain == 1:
+        if self.rain == 1:
             if self.y <= 500:
                 self.y += random.randrange(2,7)
             if self.y >= 500:
