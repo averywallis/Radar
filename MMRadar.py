@@ -41,6 +41,7 @@ blue = Color(0x0000ff, 1.0)
 skyblue = Color(0x87CEEB, 1.0)
 black = Color(0x000000, 1.0)
 orange = Color(0xffa500, 1.0)
+sun = Color(0xFFCC33,1.0)
 skin =Color(0xFCD15B, 1.0)
 wall=Color(0xE8E8E8, 1.0)
 orange=Color(0xFFa500,1.0)
@@ -57,6 +58,7 @@ thinlinesb=LineStyle(1, skyblue)
 thinlinedb=LineStyle(1, darkblue)
 thinlinewa=LineStyle(1, wall)
 thinlinew= LineStyle(1, white)
+thinlinesun = LineStyle(1, sun)
 thin1line=LineStyle(2,black)
 thickline= LineStyle(5, black)
 thickliner= LineStyle(5, red)
@@ -152,6 +154,7 @@ class radar(App):
             for x in range(0,31):
                 snow((random.randrange(400,800),random.randrange(0,500)))
         Sprite(LineAsset(1000,1,thinline),(0,500))
+        Sprite(CircleAsset(20,thinlinesun,sun),(200,200))
     def step(self):
         for sig in self.getSpritesbyClass(signal):
             sig.step()
