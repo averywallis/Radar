@@ -166,7 +166,7 @@ class radar(App):
             fog((200,0))
         dish((100,450))
         Sprite(dishtxt,(45,450))
-        signal((75,410))
+        signal((72,415))
         Sprite(signaltxt,(75,375))
         plane((900,100))
         Sprite(planetxt,(865,25))
