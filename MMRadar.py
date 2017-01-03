@@ -111,9 +111,9 @@ class fog(Sprite):
         self.vy=0
             
 class signal(Sprite):
-    asset = EllipseAsset(50,5,thinliner,red)
-    asset9 = EllipseAsset(50,5,thinliner,red9)
-    asset8 = EllipseAsset(50,5,thinliner,red8)
+    #asset = EllipseAsset(50,5,thinliner,red)
+    asset = ImageAsset("images/Signalstrength-.jpg", Frame(0,0,205,361), 6, 'horizontal')
+
     def __init__(self, position):
         super().__init__(signal.asset, position)
         self.vx=0
@@ -121,7 +121,6 @@ class signal(Sprite):
         self.rotation=-1
         self.a = 0
     def step(self):
-        self.asset = signal.asset9
         if self.a == 0:
             self.x += 3*speed
             self.y -= 1.5*speed
