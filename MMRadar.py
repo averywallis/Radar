@@ -121,6 +121,7 @@ class signal(Sprite):
         self.rotation=-1
         self.a = 0
     def step(self):
+        self.asset = signal.asset9
         if self.a == 0:
             self.x += 3*speed
             self.y -= 1.5*speed
