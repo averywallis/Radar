@@ -127,12 +127,14 @@ class signal(Sprite):
         self.rotation=.5
         self.a = 0
     def step(self):
+        
         if self.a == 0:
             self.x += 3*speed
             self.y -= 1.5*speed
             if self.x >= 900:
                 self.a = 1
         if self.a == 1:
+            self.setImage(1)
             self.x -= 3*speed
             self.y += 1.5*speed
             if self.x <= 102:
