@@ -123,7 +123,7 @@ class signal(Sprite):
         super().__init__(signal.asset, position)
         self.vx=0
         self.vy=0
-        self.scale = .5
+        self.scale = .55
         self.rotation=.5
         self.a = 0
         self.i = 0
