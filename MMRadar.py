@@ -144,7 +144,7 @@ class signal(Sprite):
                 self.a = 2
         if self.a == 2:
             self.x = 70
-            self.y = 420
+            self.y = 415
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
         Frame(227,0,292-227,125), 4, 'vertical')
