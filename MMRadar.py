@@ -26,7 +26,7 @@ snowy = 0
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
-speed = 0
+speed = 3
 precipitation = 1
 
 
