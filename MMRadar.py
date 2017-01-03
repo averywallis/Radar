@@ -124,7 +124,7 @@ class signal(Sprite):
         self.vx=0
         self.vy=0
         self.scale = .35
-        self.rotation=.5
+        self.rotation=.55
         self.a = 0
         self.i = 0
     def step(self):
