@@ -126,9 +126,12 @@ class signal(Sprite):
         self.scale = .5
         self.rotation=.5
         self.a = 0
+        self.i = 0
     def step(self):
         
         if self.a == 0:
+            self.i += .1
+            self.setImage(self.i)
             self.x += 3*speed
             self.y -= 1.5*speed
             if self.x >= 900:
