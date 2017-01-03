@@ -118,7 +118,7 @@ class fog(Sprite):
             
 class signal(Sprite):
     #asset = EllipseAsset(50,5,thinliner,red)
-    asset = ImageAsset("images/Signalstrength-1.png", Frame(0,0,(600/29),300), 29, 'horizontal')
+    asset = ImageAsset("images/Signalstrength-1.png", Frame(0,0,(960/29),300), 29, 'horizontal')
     def __init__(self, position):
         super().__init__(signal.asset, position)
         self.vx=0
