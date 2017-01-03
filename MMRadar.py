@@ -128,7 +128,6 @@ class signal(Sprite):
         self.a = 0
         self.i = 0
     def step(self):
-        
         if self.a == 0:
             self.i += .01
             self.setImage(self.i)
