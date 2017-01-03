@@ -123,7 +123,7 @@ class signal(Sprite):
         super().__init__(signal.asset, position)
         self.vx=0
         self.vy=0
-        #self.rotation=-1
+        self.rotation=-1
         self.a = 0
     def step(self):
         if self.a == 0:
