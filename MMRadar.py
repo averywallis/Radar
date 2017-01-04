@@ -145,7 +145,7 @@ class signal(Sprite):
         self.scale = .35
         self.rotation=.55
         self.a = 0
-        self.i = 0
+        self.i = ss
     def step(self):
         if self.a == 0:
             self.i += .2 + afs + af + ar
