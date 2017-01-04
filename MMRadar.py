@@ -134,7 +134,8 @@ class signal(Sprite):
             self.setImage((self.i))
             self.x += 3*speed
             self.y -= 1.5*speed
-            if self.setImage == 29:
+            if self.i == 30:
+                self.setImage(0)
                 Sprite(TextAsset(text="Radar Dish", width = 200, align = 'center', style = '10px Arial', fill=black),(0,0))
             if self.x >= 900:
                 self.a = 1
@@ -144,7 +145,8 @@ class signal(Sprite):
             self.setImage((self.i))
             self.x -= 3*speed
             self.y += 1.5*speed
-            if self.setImage == 29:
+            if self.i == 30:
+                self.setImage(0)
                 Sprite(TextAsset(text="Radar Dish", width = 200, align = 'center', style = '10px Arial', fill=black),(0,0))
             if self.x <= 72:
                 self.a = 2
