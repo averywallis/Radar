@@ -130,7 +130,7 @@ class signal(Sprite):
         self.i = 0
     def step(self):
         if self.a == 0:
-            self.i += .5
+            self.i += .1
             self.setImage((self.i))
             self.x += 3*speed
             self.y -= 1.5*speed
@@ -142,7 +142,7 @@ class signal(Sprite):
                 self.a = 1
                 self.i *= 2
         if self.a == 1:
-            self.i += 0.5
+            self.i += 0.1
             self.setImage((self.i))
             self.x -= 3*speed
             self.y += 1.5*speed
