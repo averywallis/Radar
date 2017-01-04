@@ -139,6 +139,7 @@ class signal(Sprite):
                 self.i = 2*self.i
         if self.a == 1:
             self.i += 0.5
+            self.setImage(self.i)
             self.x -= 3*speed
             self.y += 1.5*speed
             if self.x <= 72:
