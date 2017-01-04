@@ -138,7 +138,7 @@ class signal(Sprite):
                 self.a = 1
                 self.i = 2*self.i
         if self.a == 1:
-            self.i += 0.01
+            self.i += 0.1
             self.x -= 3*speed
             self.y += 1.5*speed
             if self.x <= 72:
