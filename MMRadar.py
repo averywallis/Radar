@@ -12,17 +12,17 @@ weather = int(input("Any weather? (1 for custom, 0 for none)"))
 if weather == 1:
     rainny = int(input("Rain? (1 for rain, 0 for none)"))
     if rainny == 1:
-        ar = 2
+        ar = .2
     else:
         ar = 0
     foggy = int(input("Fog? (1 for fog, 0 for none)"))
     if foggy == 1:
-        af = 2
+        af = .2
     else:
         af = 0
     snowy = int(input("Snow? (1 for snow, 0 for none)"))
     if snowy == 1:
-        afs = 2
+        afs = .2
     else:
         afs = 0
 
