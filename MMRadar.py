@@ -146,6 +146,7 @@ class signal(Sprite):
         self.rotation=.55
         self.a = 0
         self.i = ss
+        self.s = 0
     def step(self):
         if self.a == 0:
             self.i += .2 + afs + af + ar
@@ -168,12 +169,15 @@ class signal(Sprite):
                 self.setImage(28)
                 self.a = 2
                 Sprite(TextAsset(text="Signal Is Not Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
-            if self.x <= 72:
+            if self.x <= 72 and self.i >= 28:
                 self.a = 2
+                self.s = 1
         if self.a == 2:
             self.x = 72
             self.y = 415
             self.setImage(28)
+            if self.a == 1:
+                Sprite(TextAsset(text="Signal Is Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
         Frame(227,0,292-227,125), 4, 'vertical')
