@@ -149,7 +149,7 @@ class signal(Sprite):
             if self.i >= 30:
                 self.setImage(29)
                 self.a = 2
-                Sprite(TextAsset(text="Signal Is Not Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(0,0))
+                Sprite(TextAsset(text="Signal Is Not Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(50,350))
             if self.x <= 72:
                 self.a = 2
         if self.a == 2:
