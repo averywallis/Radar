@@ -34,7 +34,7 @@ else:
     snowy = 0
     afs = 0
 
-ss = int(input("Signal Strength"))/1000
+ss = int(input("Signal Strength"))/100
 #numplanes = int(input("Number of planes in air? (for future use)"))
 '''
 
