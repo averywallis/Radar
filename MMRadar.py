@@ -176,7 +176,7 @@ class signal(Sprite):
             self.x = 72
             self.y = 415
             self.setImage(28)
-            if self.a == 1:
+            if self.s == 1:
                 Sprite(TextAsset(text="Signal Is Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
