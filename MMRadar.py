@@ -33,7 +33,7 @@ else:
     af = 0
     snowy = 0
     afs = 0
-numplanes = int(input("Number of planes in air? (for future use)"))
+#numplanes = int(input("Number of planes in air? (for future use)"))
 '''
 
 rainny = 0
