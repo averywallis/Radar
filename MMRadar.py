@@ -151,7 +151,7 @@ class signal(Sprite):
         if self.a == 2:
             self.x = 72
             self.y = 415
-            if self.Image == 30:
+            if self.setImage == 30:
                 Sprite(TextAsset(text="Radar Dish", width = 200, align = 'center', style = '10px Arial', fill=black),(0,0))
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
