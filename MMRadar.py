@@ -163,7 +163,7 @@ class plane(Sprite):
     def __init__(self, position):
         super().__init__(plane.asset, position)
         self.vx=0
-        self.rotation= math.pi/2
+        self.rotation = math.pi/2
         
 class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
