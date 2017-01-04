@@ -11,13 +11,28 @@ import math
 weather = int(input("Any weather? (1 for custom, 0 for none)"))
 if weather == 1:
     rainny = int(input("Rain? (1 for rain, 0 for none)"))
+    if rainny == 1:
+        ar = 2
+    else:
+        ar = 0
     foggy = int(input("Fog? (1 for fog, 0 for none)"))
+    if foggy == 1:
+        af = 2
+    else:
+        af = 0
     snowy = int(input("Snow? (1 for snow, 0 for none)"))
+    if snowy == 1:
+        afs = 2
+    else:
+        afs = 0
 
 else:
     rainny = 0
+    ar = 0
     foggy = 0
+    af = 0
     snowy = 0
+    afs = 0
 numplanes = int(input("Number of planes in air? (for future use)"))
 '''
 
