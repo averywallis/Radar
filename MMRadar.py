@@ -196,6 +196,8 @@ class plane(Sprite):
         super().__init__(plane.asset, position)
         self.vx=0
         self.rotation = math.pi/2
+    def step(self):
+        self.x -= 1
         
 class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
@@ -230,6 +232,8 @@ class radar(App):
             rain1.step()
         for snow1 in self.getSpritesbyClass(snow):
             snow1.step()
+        for plane1 in self.getSpritesbyClass(plane):
+            plane1.step()
        
 myapp = radar(SCREEN_WINDOWX,SCREEN_WINDOWY)
 myapp.run()
