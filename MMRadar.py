@@ -219,7 +219,7 @@ class radar(App):
         Sprite(dishtxt,(45,450))
         signal((72,415))
         Sprite(signaltxt,(75,375))
-        plane((900,100))
+        plane((cpx,cpy))
         #Sprite(planetxt,(865,25))
         if rainny == 1:
             for x in range(0,31):
