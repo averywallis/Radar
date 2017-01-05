@@ -214,7 +214,7 @@ class radar(App):
         signal((72,415))
         Sprite(signaltxt,(75,375))
         plane((900,100))
-        Sprite(planetxt,(865,25))
+        #Sprite(planetxt,(865,25))
         if rainny == 1:
             for x in range(0,31):
                 rain((random.randrange(400,800),random.randrange(0,500)))
@@ -223,7 +223,7 @@ class radar(App):
                 snow((random.randrange(400,800),random.randrange(0,500)))
         Sprite(LineAsset(1000,1,thinline),(0,500))
         Sprite(CircleAsset(20,thinlinesun,sun),(200,100))
-        Sprite(suntxt,(170,90))
+        #Sprite(suntxt,(170,90))
     def step(self):
         for sig in self.getSpritesbyClass(signal):
             sig.step()
