@@ -35,6 +35,7 @@ else:
     afs = 0
 
 ss = 0-(int(input("Signal Strength (whole numbers only)")))
+pl = int(input("Location of plane"))
 #numplanes = int(input("Number of planes in air? (for future use)"))
 '''
 
