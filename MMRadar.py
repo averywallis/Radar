@@ -156,13 +156,13 @@ class signal(Sprite):
                 self.setImage(0)
             self.x += 3*speed
             self.y -= 1.5*speed
+            if self.x >= 900:
+                self.a = 1
+                self.i *= 2
             if self.i >= 28:
                 self.setImage(28)
                 self.a = 2
                 Sprite(TextAsset(text="Signal Is Not Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
-            if self.x >= 900:
-                self.a = 1
-                self.i *= 2
         if self.a == 1:
             self.i += 0.2 + afs + af +ar
             if self.i >= 0:
