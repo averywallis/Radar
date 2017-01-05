@@ -143,7 +143,6 @@ class signal(Sprite):
     asset = ImageAsset("images/Signalstrength-1.png", Frame(0,0,(959/29),300), 29, 'horizontal')
     def __init__(self, position):
         super().__init__(signal.asset, position)
-        self.center = (959/(29*2),150)
         self.scale = .35
         #self.rotation=.55
         self.rotation = math.atan2(cpy,cpx)
