@@ -148,6 +148,7 @@ class signal(Sprite):
         self.i = ss
         self.s = 0
     def step(self):
+        self.t += 1
         if self.a == 0:
             self.i += .2 + afs + af + ar
             if self.i >= 0:
