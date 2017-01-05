@@ -194,7 +194,6 @@ class plane(Sprite):
         Frame(227,0,292-227,125), 4, 'vertical')
     def __init__(self, position):
         super().__init__(plane.asset, position)
-        self.vx=0
         self.rotation = math.pi/2
     def step(self):
         self.x -= 1
