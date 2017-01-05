@@ -186,8 +186,8 @@ class signal(Sprite):
                 self.a = 2
                 Sprite(TextAsset(text="Signal Is Not Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
         if self.a == 2:
-            Sprite(TextAsset(text = "Time Elapsed:", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
-            Sprite(TextAsset(text= self.t, width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
+            Sprite(TextAsset(text = "Time Elapsed:", width = 200, align = 'center', style = '30px Arial', fill=black),(350,250))
+            Sprite(TextAsset(text= self.t, width = 200, align = 'center', style = '30px Arial', fill=black),(350,250))
             self.x = 72
             self.y = 415
             self.setImage(0)
