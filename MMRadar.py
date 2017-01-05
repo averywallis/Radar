@@ -205,8 +205,7 @@ class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
         super().__init__(width, height)
-        self.t = 2
-        dishtxt = TextAsset(text=self.t, width = 200, align = 'center', style = '10px Arial', fill=black)
+        dishtxt = TextAsset(text="Radar Dish", width = 200, align = 'center', style = '10px Arial', fill=black)
         signaltxt = TextAsset(text="Signal (moving)", width = 200, align = 'center', style = '10px Arial', fill=red)
         #suntxt = TextAsset(text="Random Sun", width = 200, align = 'center', style = '10px Arial', fill=black)
         #planetxt = TextAsset(text="Plane (will idealy move)", width = 200, align = 'center', style = '10px Arial', fill=black)
