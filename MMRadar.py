@@ -145,7 +145,8 @@ class signal(Sprite):
         self.vx=0
         self.vy=0
         self.scale = .35
-        self.rotation=.55
+        #self.rotation=.55
+        self.rotation = math.atan2(cpy,cpx)
         self.a = 0
         self.i = ss
         self.s = 0
