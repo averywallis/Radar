@@ -223,7 +223,7 @@ class radar(App):
         Sprite(dishtxt,(45,450))
         signal((72,415))
         Sprite(signaltxt,(75,375))
-        plane((cpx,cpy))
+        plane((cpx,cpy+125))
         plane1((cpx,cpy))
         #plane((900,72))
         #Sprite(planetxt,(865,25))
