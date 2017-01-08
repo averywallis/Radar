@@ -206,7 +206,6 @@ class plane(Sprite):
     def __init__(self, position):
         super().__init__(plane.asset, position)
         self.rotation = math.pi/2
-        self.center = (
     def step(self):
         self.x -= 0
         
