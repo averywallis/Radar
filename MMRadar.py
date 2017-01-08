@@ -202,7 +202,7 @@ class signal(Sprite):
                 Sprite(TextAsset(text="Signal Is Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
 class plane(Sprite):
     #asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", Frame(227,0,292-227,125), 1, 'vertical')
-    asset = ImageAsset("images/2c68b0039a8e675e40ce19e963c1a779_plane-transparent-png-vector-transparent-plane-clipart_6300-1926.png")
+    asset = ImageAsset("images/plane.png")
     def __init__(self, position):
         super().__init__(plane.asset, position)
         self.rotation = math.pi/2
