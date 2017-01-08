@@ -205,7 +205,7 @@ class plane(Sprite):
     asset = ImageAsset("https://github.com/averywallis/Radar/blob/master/images/plane.png")
     def __init__(self, position):
         super().__init__(plane.asset, position)
-        self.rotation = math.pi/2
+        #self.rotation = math.pi/2
         
 class plane1(Sprite):
     asset = CircleAsset(5,thinline,black)
