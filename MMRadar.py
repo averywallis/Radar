@@ -194,6 +194,7 @@ class signal(Sprite):
                 self.setImage(28)
                 self.a = 2
                 Sprite(TextAsset(text="Signal Is Not Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
+                print(self.t)
         if self.a == 2:
             Sprite(TextAsset(text = "Time Elapsed:", width = 200, align = 'center', style = '30px Arial', fill=black),(350,150))
             Sprite(TextAsset(text= self.t, width = 200, align = 'center', style = '30px Arial', fill=black),(550,150))
@@ -202,6 +203,7 @@ class signal(Sprite):
             self.setImage(28)
             if self.s == 1:
                 Sprite(TextAsset(text="Signal Is Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
+                print(self.t)
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", Frame(227,0,292-227,125), 1, 'vertical')
     #asset = ImageAsset("https://github.com/averywallis/Radar/blob/master/images/plane.png")
