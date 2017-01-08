@@ -35,8 +35,8 @@ else:
     afs = 0
 
 ss = 0-(int(input("Signal Strength (whole numbers only)")))
-cpx = int(input("X Location of Plane"))
-cpy = int(input("Y Location of Plane"))
+cpx = int(input("X Location of Plane (100-1000)"))
+cpy = int(input("Y Location of Plane (0-450)"))
 #numplanes = int(input("Number of planes in air? (for future use)"))
 '''
 
