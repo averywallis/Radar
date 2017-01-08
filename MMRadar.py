@@ -203,12 +203,13 @@ class signal(Sprite):
             if self.s == 1:
                 Sprite(TextAsset(text="Signal Is Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
 class plane(Sprite):
-    #asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", Frame(227,0,292-227,125), 1, 'vertical')
-    asset = ImageAsset("https://github.com/averywallis/Radar/blob/master/images/plane.png")
+    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", Frame(227,0,292-227,125), 1, 'vertical')
+    #asset = ImageAsset("https://github.com/averywallis/Radar/blob/master/images/plane.png")
     def __init__(self, position):
         super().__init__(plane.asset, position)
-        #self.rotation = math.pi/2
-        
+        self.rotation = math.pi/2
+        self.fxcenter = 0.5
+        self.fycenter = 0.5
 class plane1(Sprite):
     asset = CircleAsset(5,thinline,black)
     def __init__(self, position):
