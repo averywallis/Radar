@@ -210,6 +210,7 @@ class plane1(Sprite):
     asset = CircleAsset(5,thinline,black)
     def __init__(self, position):
         super().__init__(plane1.asset, position)
+        
 class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
