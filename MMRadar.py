@@ -219,8 +219,6 @@ class radar(App):
         #suntxt = TextAsset(text="Random Sun", width = 200, align = 'center', style = '10px Arial', fill=black)
         #planetxt = TextAsset(text="Plane (will idealy move)", width = 200, align = 'center', style = '10px Arial', fill=black)
         Sprite(RectangleAsset(1000,500,thinlinesb,skyblue),(0,0))
-        if foggy == 1:
-            fog((200,0))
         dish((100,450))
         Sprite(dishtxt,(45,450))
         signal((72,415))
@@ -234,6 +232,9 @@ class radar(App):
         if snowy == 1:
             for x in range(0,31):
                 snow((random.randrange(400,800),random.randrange(0,500)))
+        if foggy == 1:
+            fog((200,0))
+                
         Sprite(LineAsset(1000,1,thinline),(0,500))
         Sprite(CircleAsset(20,thinlinesun,sun),(200,100))
         #Sprite(suntxt,(170,90))
