@@ -166,8 +166,8 @@ class signal(Sprite):
                 self.setImage(0)
             #self.x += 3*speed
             #self.y -= 1.5*speed
-            self.x += ((cpx-100)/100)*(self.speed/100)
-            self.y -= ((450-cpy)/100)*(self.speed/100)
+            self.x += ((cpx-100)/100)*(self.speed)
+            self.y -= ((450-cpy)/100)*(self.speed)
             if self.x >= cpx:
                 self.a = 1
                 if self.i >= 0:
