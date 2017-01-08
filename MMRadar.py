@@ -205,7 +205,7 @@ class plane(Sprite):
     def __init__(self, position):
         super().__init__(plane.asset, position)
         self.rotation = math.pi/2
-        
+        self.center = (,125/2)
 class plane1(Sprite):
     asset = CircleAsset(5,thinline,black)
     def __init__(self, position):
