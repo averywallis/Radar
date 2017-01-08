@@ -104,7 +104,7 @@ class dish(Sprite):
         self.fycenter = 0.5
         self.vx=0
         self.vy=0
-        self.rotation=math.atan2(cpy,cpx)
+        self.rotation = math.atan2(450-cpy,cpx-100)
         
 class rain(Sprite):
     asset = RectangleAsset(1,1,thinlinedb,darkblue)
