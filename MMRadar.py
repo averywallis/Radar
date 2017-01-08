@@ -243,8 +243,8 @@ class radar(App):
         Sprite(CircleAsset(20,thinlinesun,sun),(200,100))
         #Sprite(suntxt,(170,90))
     def step(self):
-        #for sig in self.getSpritesbyClass(signal):
-            #sig.step()
+        for sig in self.getSpritesbyClass(signal):
+            sig.step()
         for rain1 in self.getSpritesbyClass(rain):
             rain1.step()
         for snow1 in self.getSpritesbyClass(snow):
