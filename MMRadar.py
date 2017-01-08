@@ -145,7 +145,10 @@ class signal(Sprite):
         super().__init__(signal.asset, position)
         self.scale = .35
         #self.rotation=.55
-        self.rotation = math.atan2(cpy,cpx-100)
+        if cpy >= 450:
+            self.rotation = math.atan2(cpy-450,cpx-100)
+        else:
+            self.rotation = math.atan2(450-cpy,cpx-100)
         self.a = 0
         self.i = ss
         self.s = 0
