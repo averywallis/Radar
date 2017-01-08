@@ -205,17 +205,12 @@ class plane(Sprite):
     def __init__(self, position):
         super().__init__(plane.asset, position)
         self.rotation = math.pi/2
-    def step(self):
-        self.x -= 0
         
 class plane1(Sprite):
-    #asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", Frame(227,0,292-227,125), 1, 'vertical')
     asset = CircleAsset(5,thinline,black)
     def __init__(self, position):
         super().__init__(plane.asset, position)
         self.rotation = math.pi/2
-    def step(self):
-        self.x -= 0        
 class radar(App):
     asset = ImageAsset("images/spritesforathletes.jpg", Frame(0,0,55,50), 8, 'horizontal')
     def __init__(self, width, height):
@@ -252,8 +247,6 @@ class radar(App):
             rain1.step()
         for snow1 in self.getSpritesbyClass(snow):
             snow1.step()
-        for plane1 in self.getSpritesbyClass(plane):
-            plane1.step()
        
 myapp = radar(SCREEN_WINDOWX,SCREEN_WINDOWY)
 myapp.run()
