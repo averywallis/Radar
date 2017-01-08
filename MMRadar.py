@@ -154,6 +154,8 @@ class signal(Sprite):
         self.s = 0
         self.t = 0
         self.g = 0
+        self.fxcenter= .5
+        self.fycenter = 0.5
     def step(self):
         if self.a != 2:
             self.t += 1
