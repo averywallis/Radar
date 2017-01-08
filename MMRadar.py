@@ -227,7 +227,7 @@ class radar(App):
         Sprite(RectangleAsset(1000,500,thinlinesb,skyblue),(0,0))
         dish((100,450))
         Sprite(dishtxt,(45,450))
-        signal((72,415))
+        signal((100,450))
         Sprite(signaltxt,(75,375))
         plane((cpx,cpy))
         plane1((cpx,cpy))
@@ -246,8 +246,8 @@ class radar(App):
         Sprite(CircleAsset(20,thinlinesun,sun),(200,100))
         #Sprite(suntxt,(170,90))
     def step(self):
-        for sig in self.getSpritesbyClass(signal):
-            sig.step()
+        #for sig in self.getSpritesbyClass(signal):
+            #sig.step()
         for rain1 in self.getSpritesbyClass(rain):
             rain1.step()
         for snow1 in self.getSpritesbyClass(snow):
