@@ -100,7 +100,8 @@ class dish(Sprite):
     asset = EllipseAsset(5,50,thin1line,white)
     def __init__(self, position):
         super().__init__(dish.asset, position)
-        self.center = (2.5,25)
+        self.fxcenter = 0.5
+        self.fycenter = 0.5
         self.vx=0
         self.vy=0
         self.rotation=math.atan2(cpy,cpx)
