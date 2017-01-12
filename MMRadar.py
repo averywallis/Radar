@@ -45,6 +45,8 @@ foggy = 0
 snowy = 0
 cpx = 500
 cpy = 100
+ss = 10
+
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
