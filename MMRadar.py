@@ -182,7 +182,7 @@ class signal(Sprite):
                 self.setImage(28)
                 self.a = 2
                 Sprite(TextAsset(text="Signal Is Not Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
-                #print(self.t)
+                print(self.t)
         if self.a == 1:
             self.i += 0.2 - afs - af - ar
             if self.i >= 0:
@@ -198,16 +198,16 @@ class signal(Sprite):
                 self.setImage(28)
                 self.a = 2
                 Sprite(TextAsset(text="Signal Is Not Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
-                #print(self.t)
+                print(self.t)
         if self.a == 2:
             Sprite(TextAsset(text = "Time Elapsed:", width = 200, align = 'center', style = '30px Arial', fill=black),(350,150))
-            Sprite(TextAsset(text= self.t, width = 200, align = 'center', style = '30px Arial', fill=black),(550,150))
+            #Sprite(TextAsset(text= self.t, width = 200, align = 'center', style = '30px Arial', fill=black),(550,150))
             self.x = 72
             self.y = 415
             self.setImage(28)
             if self.s == 1:
                 Sprite(TextAsset(text="Signal Is Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
-                #print(self.t)
+                print(self.t)
 
 class plane(Sprite):
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", Frame(227,0,292-227,125), 1, 'vertical')
