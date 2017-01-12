@@ -43,7 +43,8 @@ cpy = int(input("Y Location of Plane (0-450)"))
 rainny = 0
 foggy = 0
 snowy = 0
-
+cpx = 500
+cpy = 100
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
