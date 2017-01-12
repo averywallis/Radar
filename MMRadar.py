@@ -160,8 +160,6 @@ class signal(Sprite):
         self.speed = 2
         #self.distance = math.sqrt(((cpx-100)^2)+((450-cpy)^2))
     def step(self):
-        if self.a != 2:
-            self.t += 1
         if self.a == 0:
             self.i += .2 + afs + af + ar
             if self.i >= 0:
