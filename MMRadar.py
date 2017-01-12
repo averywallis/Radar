@@ -7,7 +7,7 @@ import time
 import random
 import math
 
-
+'''
 weather = int(input("Any weather? (1 for custom, 0 for none)"))
 if weather == 1:
     rainny = int(input("Rain? (1 for rain, 0 for none)"))
@@ -43,7 +43,7 @@ cpy = int(input("Y Location of Plane (0-450)"))
 rainny = 0
 foggy = 0
 snowy = 0
-'''
+
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
