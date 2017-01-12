@@ -200,7 +200,7 @@ class signal(Sprite):
                 Sprite(TextAsset(text="Signal Is Not Strong Enough", width = 200, align = 'center', style = '30px Arial', fill=black),(350,350))
                 print(self.t)
         if self.a == 2:
-            Sprite(TextAsset(text = "Time Elapsed:", width = 200, align = 'center', style = '30px Arial', fill=black),(350,150))
+            #Sprite(TextAsset(text = "Time Elapsed:", width = 200, align = 'center', style = '30px Arial', fill=black),(350,150))
             #Sprite(TextAsset(text= self.t, width = 200, align = 'center', style = '30px Arial', fill=black),(550,150))
             self.x = 72
             self.y = 415
