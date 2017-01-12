@@ -234,7 +234,7 @@ class radar(App):
         signal((100,450))
         Sprite(signaltxt,(75,375))
         plane((cpx,cpy))
-        plane1((cpx,cpy))
+        #plane1((cpx,cpy))
         #plane((900,72))
         #Sprite(planetxt,(865,25))
         if rainny == 1:
