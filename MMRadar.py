@@ -46,7 +46,9 @@ snowy = 0
 cpx = 750
 cpy = 100
 ss = -100
-
+ar = 0
+af = 0
+afs = 0
 
 SCREEN_WINDOWX = 1000
 SCREEN_WINDOWY = 1000
